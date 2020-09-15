@@ -1,0 +1,349 @@
+/* ---------- root variables ---------- */
+:root {
+  --orange: #FFB828;
+  --light-grey: #f1f1f4;
+  --text-color-light: #f1f1f1;
+  --text-color-dark: #333;
+}
+
+
+/* ---------- GENERAL STYLING ---------- */
+html {
+  color: var(--text-color-dark);
+  font-family: 'Montserrat', sans-serif;
+  height: 100%;
+  text-align: center;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+/* GUL GRADIENT 
+background: rgb(255,220,107);
+background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 100%); 
+*/
+
+/* ---------- TOPBAR STYLING (laurids) ---------- */
+.orange-h2 {
+  color: #FFB828;
+}
+
+.topbar-til-gul-overskrift {
+  background-color: white;
+  box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.19);
+  top: 0;
+  right: 0;
+  left: 0;
+}
+
+.flex-items-gul-overskrift {
+  display: flex;
+  justify-content: space-between;
+}
+
+.gul-pil-tilbage {
+  width: 10px;
+  float: left;
+  padding-top: 20px;
+  padding-left: 20px;
+}
+
+.gul-search {
+  width: 20px;
+  float: right;
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+/* ---------- topbar styling (rasmus) ---------- 
+.topbar {
+  background-color: var(--orange);
+  color: var(--text-color-light);
+  padding: 13.5px;
+  text-transform: uppercase;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+.topbar h2 {
+  margin: 0;
+  font-weight: 300;
+}
+
+.topbar a {
+  text-decoration: none;
+  color: var(--text-color-light);
+  position: absolute;
+  top: 20px;
+}
+
+.topbar a.left {
+  left: 20px;
+}
+
+.topbar a.right {
+  right: 20px;
+}
+*/
+
+
+
+/* ---------- tabbar styling (meget af det er lavet af rasmus) ---------- */
+.tabbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* Style the links inside the navigation bar */
+.tabbar a {
+  display: inline-block;
+  color: var(--text-color-dark);
+  text-align: center;
+  padding: 20px 16px;
+  text-decoration: none;
+  font-size: 0.8em;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+/* Change the color of links on hover */
+.tabbar a:hover {
+  background-color: var(--light-grey);
+  color: var(--text-color-dark);
+}
+
+/* Add a color to the active/current link */
+.tabbar a.active {
+  background-color: var(--light-green);
+  color: var(--orange);
+}
+
+
+
+/* ---------- page styling (rasmus) ---------- */
+.page {
+  display: none;
+  /*min heigh is screen heigh minus height of tab and top bar */
+  min-height: calc(100vh - 110px);
+  background: var(--light-grey);
+  animation: fadeIn 0.6s;
+  /* padding equals height of tabbar and topbar */
+  padding: 0;
+}
+
+/* ---------- home page (rasmus) ---------- */
+.home_h2  {
+  position: relative;
+  z-index: 1;
+}
+
+/*----------- LOGIN FORSIDE (tine) -------------*/
+h1.find-your-new, h1.hobby-homies {
+  color: var(--orange);
+  margin: 2px;
+}
+
+h1.hobby-homies {
+  font-size: 35px;
+}
+
+h1.find-your-new {
+  font-size: 30px;
+}
+
+img.orange {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.container {
+  position: relative;
+  background-color: white;
+  margin:12%;
+  margin-top:150px;
+  z-index: 1;
+  padding-top:15%;
+  padding-bottom:25%;
+   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+/* ---------- LOADING ANIMATION (pernille) ---------- */
+#loader {
+  z-index: 2;
+  background: rgb(255, 220, 107);
+  background: linear-gradient(0deg, rgba(255, 220, 107, 1) 7%, rgba(255, 184, 40, 1) 39%);
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  animation: bagggrund-fade 3.7s;
+}
+
+.hide {
+  display: none;
+}
+
+#logo-animation {
+  width: 40%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 70%;
+  animation: rotate-logo 3.5s infinite both;
+}
+
+.velkomst-overskrift {
+  text-align: center;
+  color: white;
+  font-size: 2.1em;
+  animation: hide 3.5s;
+  font-weight: bold;
+}
+
+
+@keyframes rotate-logo {
+  0% {
+    transform: rotate(180deg);
+  }
+
+  25% {
+    transform: rotate(-180deg);
+  }
+
+  50% {
+    transform: rotate(180deg);
+  }
+
+  75% {
+    transform: rotate(-180deg);
+  }
+
+  100% {
+    transform: rotate(180deg);
+  }
+
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes hide {
+  99% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes baggrund-fade {
+  90% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+
+/* ---------- FIREBASE LOGIN (tine, maja) ---------- */
+.spinner {
+  border: 5px solid var(--light-grey);
+  border-radius: 50%;
+  border-top: 5px solid var(--orange);
+  width: 50px;
+  height: 50px;
+  -webkit-animation: spin 1s linear infinite;
+  /* Safari */
+  animation: spin 1s linear infinite;
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  margin: auto;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.4s, opacity 0.4s linear;
+}
+
+/* login card content */
+.firebaseui-card-content {
+  margin-top: 40px;
+}
+
+/* default "sign in with email"-header we don't need */
+.firebaseui-card-header {
+  display: none;
+}
+
+/* login conatiner */
+.firebaseui-container {
+  background-color: white;
+}
+
+/* sign in with email */
+.firebaseui-idp-password {
+  background-color: var(--orange);
+  border-radius: 20px;
+}
+
+/* sign in with google */
+.firebaseui-idp-google {
+  background-color: white;
+  border-radius: 20px;
+}
+
+/* cancel + next button */
+.firebaseui-form-actions {
+  text-align: center;
+}
+
+/* cancel button */
+.firebaseui-id-secondary-link,
+.firebaseui-button.mdl-button,
+.mdl-js-button.mdl-button--primary {
+  background-color: var(--light-grey);
+  text-transform: capitalize;
+  color: var(--text-color-dark);
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  border-radius: 20px;
+}
+
+/* next button */
+.mdl-button--raised.mdl-button--colored,
+.mdl-button--raised.mdl-button--colored:active,
+.mdl-button--raised.mdl-button--colored:hover {
+  background: var(--orange);
+  text-transform: capitalize;
+  color: #fff;
+  border-radius: 20px;
+}
+
+/* line below input fields */
+.firebaseui-textfield.mdl-textfield .firebaseui-label::after {
+  background-color: var(--orange);
+}

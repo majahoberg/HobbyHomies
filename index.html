@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>SINGLE PAGE WEB APP TEMPLATE</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="Get started with HTML, CSS and JavaScript">
+  <meta name="author" content="Rasmus Cederdorff">
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"/>
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  <!--MONTSERRAT FONT FRA GOOGLE-->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body onhashchange="pageChange()">
+  <!-- tabbar navigation -->
+  <nav id="tabbar" class="tabbar hide">
+    <a href="#home">Home</a>
+    <a href="#about">Find Homies</a>
+    <a href="#clients">Chat</a>
+    <a href="#profile">Profile</a>
+  </nav>
+
+  <!-- LOADING PAGE (pernille) -->
+  <section id="loader">
+    <img src="img/logo.png" alt="logo" id="logo-animation"><br>
+    <h1 class="velkomst-overskrift">Hobby Homies</h1>
+  </section>
+
+  <!-- PAGES -->
+  <!-- home page (rasmus) -->
+  <section id="home" class="page">
+    <header class="topbar">
+      <h2>Home</h2>
+    </header>
+    <p>My Single Page Web App Template</p>
+  </section>
+
+  <!-- about page (rasmus)
+   <section id="about" class="page">
+    <header class="topbar">
+      <h2>About</h2>
+    </header>
+    <p>This is my about page</p>
+  </section> 
+-->
+
+  <!-- find homies page - topbar (laurids) -->
+  <section id="about" class="page">
+    <header class="topbar-til-gul-overskrift">
+      <div class="flex-items-gul-overskrift">
+        <div><img src="img/arrow-yellow.png" alt="tilbage" class="gul-pil-tilbage"></div>
+        <div>
+          <h2 class="orange-h2">Find Homies</h2>
+        </div>
+        <div><img src="img/search-yellow.png" alt="søg" class="gul-search"></div>
+      </div>
+    </header>
+  </section>
+
+
+  <!-- chat page (rasmus) -->
+  <section id="clients" class="page">
+    <header class="topbar">
+      <h2>Clients</h2>
+    </header>
+    <p>Hmm, there should be some clients right here...</p>
+  </section>
+
+
+  <!-- contact page -->
+  <section id="profile" class="page">
+    <header class="topbar">
+      <h2>Profile</h2>
+      <a class="right" href="#" onclick="logout()">Logout</a>
+    </header>
+  </section>
+
+
+  <!-- login page -->
+  <section id="login" class="page">
+    
+    <div class="container">
+      <h1 class="find-your-new">Find your new</h1>
+      <h1 class="hobby-homies">Hobby Homies</h1>
+      <section id="firebaseui-auth-container"></section>
+    </div>
+    <img class="orange" src="img/baggrund1.png" alt="orange color" width="100%">
+    <!-- firebase auth container -->
+  </section>
+
+
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-app.js"></script>
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
+  <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
+
+ <!-- SPA functionality  -->
+ <script src="js/spa.js"></script>
+ <!-- main js file -->
+ <script src="js/main.js"></script>
+ <script src="js/animationloader.js"></script>
+
+</body>
+</html>
