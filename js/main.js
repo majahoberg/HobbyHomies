@@ -75,8 +75,14 @@ function logout() {
 }
 
 function appendUserData(user) {
-  document.querySelector('#profile').innerHTML += `
-    <h3>${user.displayName}</h3>
-    <p>${user.email}</p>
+  document.querySelector('#profilename').innerHTML += `
+    <h4>${user.displayName}</h4>
   `;
+}
+
+
+// gå til forrige side funktion (pernille)
+
+function goBack() {
+  window.history.back();
 }

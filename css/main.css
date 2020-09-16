@@ -57,18 +57,24 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   padding-right: 20px;
 }
 
-/* ---------- topbar styling (rasmus) ---------- 
+/* 
 .topbar {
-  background-color: var(--orange);
-  color: var(--text-color-light);
+  color: white;
   padding: 13.5px;
-  text-transform: uppercase;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999;
+  z-index: 1;
 }
+
+.topbar h2 {
+  margin: 0;
+  font-weight: 800;
+}
+
+
+RAMSUS's STYLING 
 
 .topbar h2 {
   margin: 0;
@@ -347,3 +353,202 @@ img.orange {
 .firebaseui-textfield.mdl-textfield .firebaseui-label::after {
   background-color: var(--orange);
 }
+
+
+
+
+/* ---------- FIND HOMIES (pernille) ---------- */
+
+/* fjerner styling på knap */
+button {
+  border: none;
+  background: transparent;
+}
+
+
+/* styling til gul overskrift */
+.orange-h2 {
+  color: #FFB828;
+}
+
+.topbar-til-gul-overskrift {
+  background-color: white;
+  box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.19);
+  top: 0;
+  right: 0;
+  left: 0;
+  position: sticky;
+
+}
+
+.flex-items-gul-overskrift {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.gul-pil-tilbage {
+  width: 15px;
+  float: left;
+  padding-top: 22px;
+  padding-left: 20px;
+}
+
+.gul-search {
+  width: 25px;
+  float: right;
+  padding-top: 22px;
+  padding-right: 20px;
+}
+
+/* find homies */
+.find-homies-profiler {
+  background: linear-gradient(90deg, rgba(255, 184, 40, 1) 55%, rgba(255, 220, 107, 1) 87%);
+  box-shadow: 0px 4px 16px -5px rgba(0, 0, 0, 0.19);
+  margin-right: 18px;
+  margin-left: 18px;
+  margin-top: 2.5em;
+  text-align: justify;
+}
+
+.find-homies-profiler>p {
+  color: white;
+  margin-left: 25px;
+  padding-top: 1em;
+}
+
+.navn-og-alder {
+  font-size: 1.7em;
+}
+
+.profil-billede {
+  width: 27%;
+  float: right;
+  margin-top: 40px;
+  margin-right: 25px;
+}
+
+.lokations-pointer {
+  width: 12px;
+  padding-top: 10px;
+}
+
+.homies-lokation-tekst {
+  font-size: 1em;
+  padding-top: 4px;
+}
+
+.hobbies-undertitel {
+  font-size: 1.2em;
+}
+
+.homies-profiler-broedtekst {
+  font-weight: lighter;
+  font-size: 1em;
+  padding-top: 4px;
+
+}
+
+
+
+/* ---------- PROFILE (laurids) ---------- */
+
+#profilflex{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+/* top ikon til højre */
+.blyant{
+  width: 20%;
+  float: right;
+}
+
+/* top ikon til venstre (tilbage) */
+.tilbagepil{
+  width: 10%;
+  float: left;
+}
+
+img.orangeabsolute {
+  z-index: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+  /*Profilbillede af Jacob*/
+.jacobprofilbillede{
+  width: 150px;
+  position: absolute;
+  top: 200px;
+  left: 33%;
+  z-index: 999999;
+}
+
+#firstandlastnameflex{
+  color: gray;
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+  margin-top: 35%;
+}
+
+#jacobschytzflex{
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  margin-left: 7.5%;
+  margin-right: 7.5%;
+}
+
+/*Info tekst */
+.profiletext{
+  text-align: left;
+  margin: 0;
+  margin-left: 6%;
+}
+
+/*Stregerne på siden (HR)*/
+.hrprofile{
+  margin-bottom: 5%;
+  height: 0.3px;
+  width: 87%;
+}
+
+/*Overskrift (name, location, occupation)*/
+.profileh5{
+  color: grey;
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+/*Info (Jacob, Aarhus, student) */
+.profileh4{
+  color: black;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+/*Knappen på profile*/
+#profile > button {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: transform .2s; /* Animation */
+  z-index: 999999;
+  font-weight: 600;
+  margin-top: 5%;
+  margin-bottom: 10%;
+}
+
+button:active {
+  transform: scale(0.9); 
+}
+
+/*KOPIER HER NED TIL-----------------------------------------------------------------------*/

@@ -1,5 +1,7 @@
 "use strict";
 
+// (pernille)
+
 class Loader {
     constructor() {
         this.loader = document.getElementById('loader');
@@ -12,7 +14,7 @@ class Loader {
             setTimeout(() => {
                 this.loader.classList.add("hide");
 
-            }, 3400)
+            }, 3400);
         }
     }
 }
