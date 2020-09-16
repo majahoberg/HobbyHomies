@@ -34,7 +34,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 function userAuthenticated(user) {
   appendUserData(user);
   hideTabbar(true);
-  showPage("interests")
+  showPage("interests");
   showLoader(false);
 }
 

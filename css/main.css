@@ -101,37 +101,98 @@ RAMSUS's STYLING
 
 /* ---------- tabbar styling (meget af det er lavet af rasmus) ---------- */
 .tabbar {
+  background: white;
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
-  z-index: 2;
+  z-index: 9999;
 }
 
 /* Style the links inside the navigation bar */
 .tabbar a {
   display: inline-block;
-  color: var(--text-color-dark);
+  color: #B9B9B9;
   text-align: center;
-  padding: 20px 16px;
   text-decoration: none;
   font-size: 0.8em;
   font-weight: 800;
   letter-spacing: 0.1em;
-  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
 }
 
-/* Change the color of links on hover */
-.tabbar a:hover {
-  background-color: var(--light-grey);
-  color: var(--text-color-dark);
+#stroke-2,
+.a7c32b84-4138-4909-b105-8352f2be7c0d {
+  stroke-miterlimit: 10;
+  stroke-width: 1.7px;
+}
+
+.chat-ikon {
+}
+
+.find-homies-ikon {
+  
+}
+
+.profil-ikon {
+  
 }
 
 /* Add a color to the active/current link */
 .tabbar a.active {
-  background-color: var(--light-green);
-  color: var(--orange);
+  color: #FFB828;
 }
+
+a.active .cls-1 {
+  fill: #FFB828;
+  stroke: #FFB828;
+}
+
+a.active .cls-2 {
+  display: none;
+}
+
+a.active .a2bc5a44-963f-4cdf-92d1-05ea7a378e1c {
+  fill: #FFB828;
+  stroke: #FFB828;
+}
+
+a.active .ed978444-ae00-4b29-ba99-62a17ee5fde4 {
+  display: none;
+}
+
+a.active .a107bf30-7377-4cd6-ba05-5a67c66a7e4c {
+  display: none;
+}
+
+a.active .a36e720b-d937-4684-923d-4a06bce395ee {
+  fill: #FFB828;
+  stroke: white;
+}
+
+
+a.active .a7c32b84-4138-4909-b105-8352f2be7c0d {
+  display: none;
+}
+
+a.active .b716c01d-597c-4fbd-8e51-ed31f7ad777c {
+  display: none;
+}
+
+a.active .a16232aa-efea-4055-9468-995c2e7436e1 {
+  fill: #FFB828;
+}
+
+a.active .e4e7baba-5940-47b3-8fc4-fb45ae99d495 {
+  display: none;
+}
+
+a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
+  fill: #FFB828;
+  stroke: #FFB828;
+}
+
 
 
 
