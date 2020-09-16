@@ -40,9 +40,27 @@ function pageChange() {
     page = location.hash.slice(1);
   }
   showPage(page);
+
+  if (page === "interests" || page === "login") {
+    hideTabbar(true);
+
+  } else {
+    hideTabbar(false);
+  }
 }
 
+
 pageChange(); // called by default when the app is loaded for the first time
+
+// show and hide tabbar
+function hideTabbar(hide) {
+  let tabbar = document.querySelector('#tabbar');
+  if (hide) {
+    tabbar.classList.add("hide");
+  } else {
+    tabbar.classList.remove("hide");
+  }
+}
 
 
 /*

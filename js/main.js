@@ -33,8 +33,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function userAuthenticated(user) {
   appendUserData(user);
-  hideTabbar(true);
-  showPage("interests");
+  showPage("home");
   showLoader(false);
 }
 
@@ -47,7 +46,6 @@ function home() {
 
 
 function userNotAuthenticated() {
-  hideTabbar(true);
   showPage("login");
 
   // Firebase UI configuration
@@ -67,15 +65,7 @@ function userNotAuthenticated() {
   showLoader(false);
 }
 
-// show and hide tabbar
-function hideTabbar(hide) {
-  let tabbar = document.querySelector('#tabbar');
-  if (hide) {
-    tabbar.classList.add("hide");
-  } else {
-    tabbar.classList.remove("hide");
-  }
-}
+
 
 
 // sign out user
