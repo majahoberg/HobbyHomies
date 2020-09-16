@@ -38,6 +38,11 @@ function userAuthenticated(user) {
   showLoader(false);
 }
 
+function home() {
+  showPage("home");
+  hideTabbar(false); 
+  document.getElementById("interests").style.display = 'none';
+}
 
 
 
@@ -52,7 +57,7 @@ function userNotAuthenticated() {
       firebase.auth.EmailAuthProvider.PROVIDER_ID,
       firebase.auth.GoogleAuthProvider.PROVIDER_ID
     ],
-    signInSuccessUrl: '#home'
+    signInSuccessUrl: '#interests'
   };
   // Init Firebase UI Authentication
   if (!_firebaseUI) {
