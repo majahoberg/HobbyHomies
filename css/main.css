@@ -628,8 +628,9 @@ button {
   display: flex;
   position: absolute;
   top: 20px;
-  z-index: 1;
+  z-index: 99999;
   margin: auto;
+  
 }
 .profilearrow{
   width: 12%;
@@ -663,7 +664,7 @@ button {
 img.orangeabsolute {
   z-index: 0;
   position: absolute;
-  top: 0;
+  top: -75px;
   left: 0;
 }
 
@@ -671,9 +672,9 @@ img.orangeabsolute {
 .jacobprofilbillede {
   width: 150px;
   position: absolute;
-  top: 200px;
+  top: 125px;
   left: 33%;
-  z-index: 999999;
+  z-index: 999;
 }
 
 #firstandlastnameflex {
@@ -731,14 +732,14 @@ img.orangeabsolute {
   padding-right: 30px;
   transition: transform .2s;
   /* Animation */
-  z-index: 999999;
+  z-index: 999999999999999;
   font-weight: 600;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 30%;
+  width: 50%;
+  height: 30px;
 }
 
 button:active {
-  transform: scale(0.9);
-}
+  transform: scale(0.9);50
 
 /*KOPIER HER NED TIL-----------------------------------------------------------------------*/
