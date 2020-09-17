@@ -23,9 +23,7 @@ function appendCategories(categories) {
 
   for (const category of categories) {
     template += /*html*/ `
-      <article>
-        <h2>${category.title.rendered}</h2>
-      </article>
+      <h2>${category.title.rendered}</h2>
       `;
   }
 

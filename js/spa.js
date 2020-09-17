@@ -53,7 +53,7 @@ pageChange(); // called by default when the app is loaded for the first time
 
 // show and hide tabbar
 function hideTabbar(hide) {
-  let tabbar = document.querySelector('#tabbar');
+  let tabbar = document.querySelector('.tabbar');
   if (hide) {
     tabbar.classList.add("hide");
   } else {
