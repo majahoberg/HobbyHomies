@@ -252,6 +252,7 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   border: none;
   margin-top: 25px;
   border-radius: 4px;
+  font-family: montserrat;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -761,6 +762,26 @@ button {
   text-align: left;
 }
 
+#message-box {
+  background-color: #F5F5F5;
+  border-radius: 50px 50px 50px 50px;
+  border: none;
+  margin-top: 60%;
+  width: 75%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  margin-right: 10%;
+  font-family: montserrat;
+  padding-left: 2%;
+}
+
+.send-besked-ikon {
+  width: 7%;
+  float: right;
+  margin-top: -1.85em;
+  margin-right: 7%;
+}
+
 
 /* ---------- PROFILE (laurids) ---------- */
 #profile {
@@ -881,7 +902,9 @@ img.orangeabsolute {
 }
 
 button:active {
-  transform: scale(0.9);50}
+  transform: scale(0.9);
+  50
+}
 
 /*PROFILE SLUT-----------------------------------------------------------------------*/
 
@@ -889,23 +912,23 @@ button:active {
 
 .yourmeetupsh {
 
-color: white;
-padding: 18%;
+  color: white;
+  padding: 18%;
 
 
 }
 
-.meetuppil{
+.meetuppil {
   width: 10%;
   margin-left: 75%;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-.flexmeetups{
+.flexmeetups {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
+
 
 }
