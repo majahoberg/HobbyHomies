@@ -65,7 +65,9 @@ function userNotAuthenticated() {
   showLoader(false);
 }
 
-
+function yourmeetups() {
+  showPage("yourmeetups")
+}
 
 
 // sign out user
