@@ -237,10 +237,11 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 }
 
 .mdl-js {
-  background-color: var(--light-grey);
+  background-color: transparent;
+
 }
 
- 
+
 
 
 /* ---------- home page (tine) ---------- */
@@ -319,10 +320,7 @@ h2.floorball {
 .kryds {
   position: sticky;
   left: 80%;
-  top: 76.239012931293%;
   z-index: 2;
-
-
 }
 
 
@@ -654,6 +652,44 @@ button {
 
 }
 
+/* ---------- CREATE EVENT (pernille) ---------- */
+#createevent {
+  background-color: white;
+}
+
+.indsaet-foto {
+  width: 15%;
+  margin-top: 5%;
+}
+
+.boks-bag-billede {
+  background-color: #F0F0F0;
+  padding: 10%;
+  margin-bottom: -9em;
+}
+
+#createevent>button {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  border-radius: 15px;
+  padding: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
+  transition: transform .2s;
+  /* Animation */
+  z-index: 999999999999999;
+  font-weight: 600;
+  margin-bottom: 30%;
+  width: 50%;
+  height: 30px;
+}
+
+button:active {
+  transform: scale(0.9);
+  50
+}
+
 /* ---------- CHAT (pernille) ---------- */
 #clients {
   background-color: white;
@@ -697,6 +733,7 @@ button {
 /* ---------- CHATRUM (pernille) ---------- */
 #chat-rum {
   background-color: white;
+
 }
 
 .chatrum-billede {

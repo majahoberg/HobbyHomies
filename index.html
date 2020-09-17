@@ -231,15 +231,15 @@
 
     <div id="select-category">
       <p>HEJ</p>
-        <button class="accordion">Section 1</button>
-        <div class="panel">
-          <p>testhfddfdjhdfhjdfhjfdhfhdjhjdhfjhdjfhjhdjhf</p>
-        </div>
-        <button onclick="home()" class="done">Done</button>
+      <button class="accordion">Section 1</button>
+      <div class="panel">
+        <p>testhfddfdjhdfhjdfhjfdhfhdjhjdhfjhdjfhjhdjhf</p>
+      </div>
+      <button onclick="home()" class="done">Done</button>
     </div>
   </section>
 
- 
+
 
 
 
@@ -254,8 +254,8 @@
         <img src="img/search-yellow.png" width="20%" id="input_img">
       </div>
     </header>
-
-    <img class="kryds" src="img/kryds.svg" width="17%">
+    <button onclick="createevent()" class="done">
+      <img class="kryds" src="img/kryds.svg" width="17%"></button>
 
     <div class="hvid_boks">
       <h2 class="floorball">Floorball</h2>
@@ -281,6 +281,9 @@
       </div>
       <img class="floorball_img" src="img/fodbold.jpg" width="100%">
     </div>
+    <br>
+    <br>
+    <br>
   </section>
 
   <!-- about page (rasmus)
@@ -378,7 +381,65 @@
     <br>
   </section>
 
+  <section id=createevent class="page">
+    <header class="topbar-til-gul-overskrift">
+      <div class="flex-items-gul-overskrift">
+        <div><button onclick="goBack()"><img src="img/arrow-yellow.png" alt="tilbage" class="gul-pil-tilbage"></button>
+        </div>
+        <div>
+          <h2 class="orange-h2">Find Homies</h2>
+        </div>
+        <div><img src="img/search-yellow.png" alt="søg" class="gul-search"></div>
+      </div>
+    </header>
+    <div class="boks-bag-billede"><img src="img/kamera.png" alt="foto" class="indsaet-foto"></div>
+    <div id="firstandlastnameflex"></div>
 
+    <!-- jacob/schytz -->
+    <div class="profiletext">
+      <h5 class="profileh5">Meetup name</h5>
+      <h4 class="profileh4">Football</h4>
+    </div>
+    <hr class="hrprofile">
+
+    <!-- Info om profilen - lokation, beskæftigelse osv. -->
+    <div class="profiletext">
+      <h5 class="profileh5">Category</h5>
+      <h4 class="profileh4">Sport, football</h4>
+    </div>
+    <hr class="hrprofile">
+
+    <div class="profiletext">
+      <h5 class="profileh5">Date and time</h5>
+      <h4 class="profileh4">07-10-2020 at 20:40</h4>
+    </div>
+    <hr class="hrprofile">
+
+    <div class="profiletext">
+      <h5 class="profileh5">Location</h5>
+      <h4 class="profileh4">Risskov</h4>
+    </div>
+    <hr class="hrprofile">
+
+    <div class="profiletext">
+      <h5 class="profileh5">Description</h5>
+      <h4 class="profileh4">A cozy game of football</h4>
+    </div>
+    <hr class="hrprofile">
+
+    <div class="profiletext">
+      <h5 class="profileh5">Maximum participants</h5>
+      <h4 class="profileh4">14</h4>
+    </div>
+    <hr class="hrprofile">
+
+
+
+
+    <!-- Create event knap -->
+    <button onclick="yourmeetups()">Create event</button>
+  </section>
+  </section>
 
   <!-- chat page (pernille) -->
   <section id="clients" class="page">

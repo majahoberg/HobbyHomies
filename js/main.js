@@ -69,6 +69,9 @@ function yourmeetups() {
   showPage("yourmeetups")
 }
 
+function createevent() {
+  showPage("createevent")
+}
 
 // sign out user
 function logout() {
