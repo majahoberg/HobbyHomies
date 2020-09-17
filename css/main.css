@@ -237,7 +237,6 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 /* ---------- home page (tine) ---------- */
 .orange {
   width: 100%;
-  z-index: ;
 }
 
 .home_h2 {
@@ -629,6 +628,30 @@ button {
   display: flex;
   justify-content: space-between;
 
+}
+
+#profileheaderflex{
+  display: flex;
+  position: absolute;
+  top: 20px;
+  z-index: 1;
+  margin: auto;
+}
+.profilearrow{
+  width: 12%;
+  margin-right: 50%;
+  
+}
+
+.profilearrow2{
+  width: 12%;
+  margin-left: 50%;
+  
+}
+
+#profileh{
+ color: white;
+ margin: auto;
 }
 
 /* top ikon til højre */
