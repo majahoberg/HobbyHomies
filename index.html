@@ -7,13 +7,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Get started with HTML, CSS and JavaScript">
   <meta name="author" content="Rasmus Cederdorff">
-  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css"/>
+  <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
   <link rel="stylesheet" href="css/main.css">
-  <link rel="shortcut icon" type="image/png" href="img/favicon.png"/>
+  <link rel="shortcut icon" type="image/png" href="img/favicon.png" />
   <!--MONTSERRAT FONT FRA GOOGLE-->
   <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
-    rel="stylesheet"> 
+    rel="stylesheet">
 </head>
 
 <body onhashchange="pageChange()">
@@ -162,7 +162,7 @@
             d="M357.44,414.86a10,10,0,0,1-1.28,5.07q.61,2.79,1.21,5.6l-5.69-1.15a10,10,0,0,1-5,1.27c-4.82-.14-10.79-4.24-10.79-10.79a10.79,10.79,0,0,1,10.79-10.79C353.2,404.07,357.29,410,357.44,414.86Z"
             transform="translate(-319.58 -391.78)" />
         </g>
-      </svg> <br>Chat</a>
+      </svg> <br><span id="chattext">Chat</span></a>
     <a href="#profile"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.31 31.81" class="profil-ikon">
         <defs>
           <style>
@@ -202,14 +202,6 @@
 
 
 
-  <!-- tabbar navigation -->
-  <nav id="tabbar" class="tabbar hide">
-    <a href="#home">Home</a>
-    <a href="#about">Find Homies</a>
-    <a href="#clients">Chat</a>
-    <a href="#profile">Profile</a>
-  </nav>
-
   <!-- LOADING PAGE (pernille) -->
   <section id="loader">
     <img src="img/logo.png" alt="logo" id="logo-animation"><br>
@@ -217,34 +209,34 @@
   </section>
 
 
-    <!-- login page -->
-    <section id="login" class="page">
-    
-      <div class="container">
-        <h1 class="find-your-new">Find your new</h1>
-        <h1 class="hobby-homies">Hobby Homies</h1>
-        <section id="firebaseui-auth-container"></section>
-      </div>
-      <img class="orange" src="img/baggrund1.png" alt="orange color" width="100%">
-      <!-- firebase auth container -->
-    </section>
+  <!-- login page -->
+  <section id="login" class="page">
 
-
-<!-- PICK YOUR INTERESTS PAGE (maja) -->
-<section id="interests" class="page">
-  <img class="orange" src="img/baggrund1.png" alt="" width="100%">
-  <header class="topbar">
-    <h2 class="home_h2">Pick your interests</h2>
-  </header>
-
-  <div id="select-category">
-    <button class="accordion">Section 1</button>
-    <div class="panel">
-      <p>testhfddfdjhdfhjdfhjfdhfhdjhjdhfjhdjfhjhdjhf</p>
+    <div class="container">
+      <h1 class="find-your-new">Find your new</h1>
+      <h1 class="hobby-homies">Hobby Homies</h1>
+      <section id="firebaseui-auth-container"></section>
     </div>
-  </div>
-  <button onclick="home()" class="done">Done</button>
-</section>
+    <img class="orange" src="img/baggrund1.png" alt="orange color" width="100%">
+    <!-- firebase auth container -->
+  </section>
+
+
+  <!-- PICK YOUR INTERESTS PAGE (maja) -->
+  <section id="interests" class="page">
+    <img class="orange" src="img/baggrund1.png" alt="" width="100%">
+    <header class="topbar">
+      <h2 class="home_h2">Pick your interests</h2>
+    </header>
+
+    <div id="select-category">
+      <button class="accordion">Section 1</button>
+      <div class="panel">
+        <p>testhfddfdjhdfhjdfhjfdhfhdjhjdhfjhdjfhjhdjhf</p>
+      </div>
+    </div>
+    <button onclick="home()" class="done">Done</button>
+  </section>
 
 
 
@@ -265,7 +257,7 @@
     <div class="hvid_boks">
       <h2 class="floorball">Floorball</h2>
       <p class="meetup_info"><img src="img/clock (1).svg" width="5%"> 28 januar 2021 at 20:45</p>
-        <p class="meetup_info"><img src="img/pin (1).svg" width="4%"> Nørre Allè 84, 8000 Aarhus C</p>
+      <p class="meetup_info"><img src="img/pin (1).svg" width="4%"> Nørre Allè 84, 8000 Aarhus C</p>
 
       <div class="hvid_boks_img">
         <img src="/img/jacob-rund.png" width="16%">
@@ -279,11 +271,11 @@
       <h2 class="floorball">Football</h2>
       <p class="meetup_info"><img src="img/clock (1).svg" width="5%"> 9 december 2020 at 17:00</p>
       <p class="meetup_info"><img src="img/pin (1).svg" width="4%"> Ringvej Syd 56, 8260 Viby J</p>
-        <div class="hvid_boks_img">
-          <img src="/img/tine-rund.png" width="16%">
-          <img src="/img/maja-rund.png" width="16%">
-          <img src="/img/laurids-rund.png" width="16%">
-        </div>
+      <div class="hvid_boks_img">
+        <img src="/img/tine-rund.png" width="16%">
+        <img src="/img/maja-rund.png" width="16%">
+        <img src="/img/laurids-rund.png" width="16%">
+      </div>
       <img class="floorball_img" src="img/fodbold.jpg" width="100%">
     </div>
   </section>
@@ -317,7 +309,8 @@
   <section id="about" class="page">
     <header class="topbar-til-gul-overskrift">
       <div class="flex-items-gul-overskrift">
-        <div><button onclick="goBack()"><img src="img/arrow-yellow.png" alt="tilbage" class="gul-pil-tilbage"></button></div>
+        <div><button onclick="goBack()"><img src="img/arrow-yellow.png" alt="tilbage" class="gul-pil-tilbage"></button>
+        </div>
         <div>
           <h2 class="orange-h2">Find Homies</h2>
         </div>
@@ -400,63 +393,64 @@
    -->
 
   <!-- PROFILE PAGE (laurids) -->
-<section id="profile" class="page">
-  <header class="topbar-til-gul-overskrift">
-    <div class="flex-items-gul-overskrift">
-      <div><button onclick="goBack()"><img src="img/arrow-yellow.png" alt="tilbage" class="gul-pil-tilbage"></button></div>
-      <div>
-        <h2 class="orange-h2">Find Homies</h2>
+  <section id="profile" class="page">
+    <header class="topbar-til-gul-overskrift">
+      <div class="flex-items-gul-overskrift">
+        <div><button onclick="goBack()"><img src="img/arrow-yellow.png" alt="tilbage" class="gul-pil-tilbage"></button>
+        </div>
+        <div>
+          <h2 class="orange-h2">Find Homies</h2>
+        </div>
+
       </div>
-  
+    </header>
+
+    <img class="orangeabsolute" src="img/baggrund1.png" width="100%">
+
+    <!-- Jacobs profilbillede -->
+    <img class="jacobprofilbillede" src="/img/jacob-rund.png" alt="">
+    <br><br><br><br><br><br><br><br>
+
+    <!-- first/last name -->
+    <div id="firstandlastnameflex"></div>
+
+    <!-- jacob/schytz -->
+    <div class="profiletext">
+      <h5 class="profileh5">Name</h5>
+      <h4 id="profilename" class="profileh4"></h4>
     </div>
-  </header>
+    <hr class="hrprofile">
 
-  <img class="orangeabsolute" src="img/baggrund1.png" width="100%">
+    <!-- Info om profilen - lokation, beskæftigelse osv. -->
+    <div class="profiletext">
+      <h5 class="profileh5">Location</h5>
+      <h4 class="profileh4">Aarhus, Denmark</h4>
+    </div>
+    <hr class="hrprofile">
 
-  <!-- Jacobs profilbillede -->
-  <img class="jacobprofilbillede" src="/img/jacob-rund.png" alt="">
-  <br><br><br><br><br><br><br><br>
+    <div class="profiletext">
+      <h5 class="profileh5">Language</h5>
+      <h4 class="profileh4">Danish, English</h4>
+    </div>
+    <hr class="hrprofile">
 
-  <!-- first/last name -->
-  <div id="firstandlastnameflex"></div>
+    <div class="profiletext">
+      <h5 class="profileh5">Occupation</h5>
+      <h4 class="profileh4">Student</h4>
+    </div>
+    <hr class="hrprofile">
 
-  <!-- jacob/schytz -->
-  <div class="profiletext">
-    <h5 class="profileh5">Name</h5>
-    <h4 id="profilename" class="profileh4"></h4>
-  </div>
-  <hr class="hrprofile">
+    <div class="profiletext">
+      <h5 class="profileh5">Hobbies</h5>
+      <h4 class="profileh4">Hockey, Football, Beer...</h4>
+    </div>
+    <hr class="hrprofile">
 
-  <!-- Info om profilen - lokation, beskæftigelse osv. -->
-  <div class="profiletext">
-    <h5 class="profileh5">Location</h5>
-    <h4 class="profileh4">Aarhus, Denmark</h4>
-  </div>
-  <hr class="hrprofile">
+    <!-- Your meetups knap -->
+    <button>Your Meetups</button>
+  </section>
 
-  <div class="profiletext">
-    <h5 class="profileh5">Language</h5>
-    <h4 class="profileh4">Danish, English</h4>
-  </div>
-  <hr class="hrprofile">
-
-  <div class="profiletext">
-    <h5 class="profileh5">Occupation</h5>
-    <h4 class="profileh4">Student</h4>
-  </div>
-  <hr class="hrprofile">
-
-  <div class="profiletext">
-    <h5 class="profileh5">Hobbies</h5>
-    <h4 class="profileh4">Hockey, Football, Beer...</h4>
-  </div>
-  <hr class="hrprofile">
-
-  <!-- Your meetups knap -->
-  <button>Your Meetups</button>
-</section>
-
-<!-- profile page - KOPIER HER NED TIL ------------------------------------------------------------------------------- -->
+  <!-- profile page - KOPIER HER NED TIL ------------------------------------------------------------------------------- -->
 
 
 
@@ -470,12 +464,13 @@
   <script src="https://www.gstatic.com/firebasejs/7.8.1/firebase-firestore.js"></script>
   <script src="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.js"></script>
 
- <!-- SPA functionality  -->
- <script src="js/spa.js"></script>
- <!-- main js file -->
- <script src="js/main.js"></script>
- <script src="js/api.js"></script>
- <script src="js/animationloader.js"></script>
+  <!-- SPA functionality  -->
+  <script src="js/spa.js"></script>
+  <!-- main js file -->
+  <script src="js/main.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/animationloader.js"></script>
 
 </body>
+
 </html>
