@@ -90,3 +90,23 @@ function appendUserData(user) {
 function goBack() {
   window.history.back();
 }
+
+
+/*
+//Søgefunktion
+
+function search(value) {
+  console.log(value);
+  let filteredTeachers = [];
+  for (let teacher of teachers) {
+    let name = teacher.name.toLowerCase();
+    if (name.includes(value.toLowerCase())) {
+      filteredTeachers.push(teacher);
+    }
+  }
+
+  console.log(filteredTeachers);
+  appendTeachers(filteredTeachers);
+}
+
+*/
