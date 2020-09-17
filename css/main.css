@@ -24,14 +24,6 @@ svg {
   width: 50%;
 }
 
-.tabbar {
-  display: flex;
-  justify-content: center;
-}
-
-
-
-
 /* GUL GRADIENT 
 background: rgb(255,220,107);
 background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 100%); 
@@ -113,8 +105,10 @@ RAMSUS's STYLING
 
 /* ---------- tabbar styling (meget af det er lavet af rasmus) ---------- */
 .tabbar {
+  display: flex;
+  justify-content: center;
   background: white;
-  box-shadow: 0px -4px 39px -23px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -148,7 +142,6 @@ RAMSUS's STYLING
   bottom: 5px;
 }
 
-.find-homies-ikon {}
 
 #chattext {
   position: relative;
@@ -232,6 +225,22 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   padding: 0;
 }
 
+/* ---------- pick your interests (maja) ---------- */
+#select-category {
+  border: none;
+  position: relative;
+  margin: 10%;
+  z-index: 1;
+  border-radius: 4px;
+  min-height: calc(100vh - -100px);
+
+}
+
+.mdl-js {
+  background-color: var(--light-grey);
+}
+
+ 
 
 
 /* ---------- home page (tine) ---------- */
@@ -252,6 +261,7 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   border: none;
   margin-top: 25px;
   border-radius: 4px;
+  font-family: montserrat;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -360,7 +370,7 @@ img.orange {
   left: 0;
   bottom: 0;
   right: 0;
-  animation: bagggrund-fade 3.7s;
+  animation: bagggrund-fade 3.5s;
 }
 
 .hide {
@@ -405,32 +415,32 @@ img.orange {
     transform: rotate(180deg);
   }
 
-  99% {
-    opacity: 0;
+  75% {
+    opacity: 1;
   }
 
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
 @keyframes hide {
-  99% {
-    opacity: 0;
+  75% {
+    opacity: 1;
   }
 
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
 @keyframes baggrund-fade {
-  90% {
-    opacity: 0;
+  75% {
+    opacity: 1;
   }
 
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
@@ -644,9 +654,10 @@ button {
 
 }
 
-/* ---------- PROFILE (pernille) ---------- */
+/* ---------- CHAT (pernille) ---------- */
 #clients {
   background-color: white;
+
 }
 
 .chat-billede-enkelt {
@@ -670,6 +681,7 @@ button {
   float: left;
   padding-left: 4%;
   font-size: 1em;
+  color: #3F3F3F;
 }
 
 .chat-text {
@@ -679,7 +691,106 @@ button {
   padding-bottom: 3%;
   margin-top: -0.5em;
   text-align: justify;
+  color: #707070;
 }
+
+/* ---------- CHATRUM (pernille) ---------- */
+#chat-rum {
+  background-color: white;
+}
+
+.chatrum-billede {
+  width: 18%;
+  float: left;
+  margin-left: 30%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.h4-chat-navn {
+  color: #FFB828;
+  margin-top: 6px;
+  font-size: 1.4em;
+  float: right;
+  margin-right: 30%;
+  padding-top: 6%;
+}
+
+.message-billede-venstre {
+  width: 10%;
+  float: left;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.chatrum-chatbesked-hoejre {
+  background-color: #F5F5F5;
+  border-radius: 50px 50px 50px 50px;
+  padding: 3%;
+  padding-left: 5%;
+  margin-top: 5%;
+  margin-right: 13%;
+  margin-left: 16%;
+  text-align: left;
+}
+
+.message-billede-hoejre {
+  width: 10%;
+  float: right;
+  margin-right: 5%;
+  margin-top: 1%;
+
+}
+
+.chatrum-chatbesked-venstre {
+  background-color: #FFB828;
+  border-radius: 50px 50px 50px 50px;
+  padding: 3%;
+  padding-left: 5%;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 16%;
+  text-align: right;
+}
+
+.message-billede-venstre-2 {
+  width: 10%;
+  float: left;
+  margin-left: 5%;
+  margin-top: -0.5%;
+}
+
+.chatrum-chatbesked-hoejre-2 {
+  background-color: #F5F5F5;
+  border-radius: 50px 50px 50px 50px;
+  padding: 3%;
+  padding-left: 5%;
+  margin-top: 5%;
+  margin-right: 12%;
+  margin-left: 16%;
+  text-align: left;
+}
+
+#message-box {
+  background-color: #F5F5F5;
+  border-radius: 50px 50px 50px 50px;
+  border: none;
+  margin-top: 60%;
+  width: 75%;
+  padding-top: 2.5%;
+  padding-bottom: 2.5%;
+  margin-right: 10%;
+  font-family: montserrat;
+  padding-left: 2%;
+}
+
+.send-besked-ikon {
+  width: 7%;
+  float: right;
+  margin-top: -1.85em;
+  margin-right: 7%;
+}
+
 
 /* ---------- PROFILE (laurids) ---------- */
 #profile {
@@ -800,7 +911,9 @@ img.orangeabsolute {
 }
 
 button:active {
-  transform: scale(0.9);50}
+  transform: scale(0.9);
+  50
+}
 
 /*PROFILE SLUT-----------------------------------------------------------------------*/
 
@@ -808,23 +921,23 @@ button:active {
 
 .yourmeetupsh {
 
-color: white;
-padding: 18%;
+  color: white;
+  padding: 18%;
 
 
 }
 
-.meetuppil{
+.meetuppil {
   width: 10%;
   margin-left: 75%;
   -webkit-transform: scaleX(-1);
   transform: scaleX(-1);
 }
 
-.flexmeetups{
+.flexmeetups {
   display: flex;
   flex-direction: row;
   align-items: center;
-  
+
 
 }
