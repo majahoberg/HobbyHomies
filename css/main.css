@@ -226,15 +226,30 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 }
 
 /* ---------- pick your interests (maja) ---------- */
-#select-category {
+#categories {
   border: none;
   position: relative;
   margin: 10%;
   z-index: 1;
   border-radius: 4px;
-  min-height: calc(100vh - -100px);
-
 }
+
+.accordion {
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.panel {
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
 
 .mdl-js {
   background-color: var(--light-grey);
@@ -318,7 +333,7 @@ h2.floorball {
 .kryds {
   position: sticky;
   left: 80%;
-  top: 76.239012931293%;
+  top: 76%;
   z-index: 2;
 
 
