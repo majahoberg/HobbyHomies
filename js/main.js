@@ -37,11 +37,11 @@ function userAuthenticated(user) {
   showLoader(false);
 }
 
-function home() {
-  showPage("home");
-  hideTabbar(false);
-  document.getElementById("interests").style.display = 'none';
-}
+// function home() {
+//  showPage("home");
+//  hideTabbar(false); 
+//  document.getElementById("interests").style.display = 'none';
+//}
 
 
 
