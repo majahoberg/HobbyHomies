@@ -639,13 +639,13 @@ button {
   
 }
 .profilearrow{
-  width: 12%;
+  width: 10%;
   margin-right: 50%;
   
 }
 
 .profilearrow2{
-  width: 12%;
+  width: 10%;
   margin-left: 50%;
   
 }
@@ -653,18 +653,6 @@ button {
 #profileh{
  color: white;
  margin: auto;
-}
-
-/* top ikon til højre */
-.blyant {
-  width: 20%;
-  float: right;
-}
-
-/* top ikon til venstre (tilbage) */
-.tilbagepil {
-  width: 10%;
-  float: left;
 }
 
 img.orangeabsolute {
@@ -709,7 +697,7 @@ img.orangeabsolute {
 /*Stregerne på siden (HR)*/
 .hrprofile {
   margin-bottom: 5%;
-  height: 0.3px;
+  height: 0.1px;
   width: 87%;
 }
 
@@ -746,6 +734,31 @@ img.orangeabsolute {
 }
 
 button:active {
-  transform: scale(0.9);50
+  transform: scale(0.9);50}
 
-/*KOPIER HER NED TIL-----------------------------------------------------------------------*/
+/*PROFILE SLUT-----------------------------------------------------------------------*/
+
+/*YOUR MEETUPS--------------------------*/
+
+.yourmeetupsh {
+
+color: white;
+padding: 18%;
+
+
+}
+
+.meetuppil{
+  width: 10%;
+  margin-left: 75%;
+  -webkit-transform: scaleX(-1);
+  transform: scaleX(-1);
+}
+
+.flexmeetups{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  
+
+}
