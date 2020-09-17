@@ -114,7 +114,7 @@ RAMSUS's STYLING
 /* ---------- tabbar styling (meget af det er lavet af rasmus) ---------- */
 .tabbar {
   background: white;
-  box-shadow: 0px -4px 39px -23px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 4px 16px 2px rgba(0, 0, 0, 0.19);
   position: fixed;
   bottom: 0;
   left: 0;
@@ -644,9 +644,10 @@ button {
 
 }
 
-/* ---------- PROFILE (pernille) ---------- */
+/* ---------- CHAT (pernille) ---------- */
 #clients {
   background-color: white;
+
 }
 
 .chat-billede-enkelt {
@@ -670,6 +671,7 @@ button {
   float: left;
   padding-left: 4%;
   font-size: 1em;
+  color: #3F3F3F;
 }
 
 .chat-text {
@@ -679,7 +681,86 @@ button {
   padding-bottom: 3%;
   margin-top: -0.5em;
   text-align: justify;
+  color: #707070;
 }
+
+/* ---------- CHATRUM (pernille) ---------- */
+#chat-rum {
+  background-color: white;
+}
+
+.chatrum-billede {
+  width: 18%;
+  float: left;
+  margin-left: 30%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.h4-chat-navn {
+  color: #FFB828;
+  margin-top: 6px;
+  font-size: 1.4em;
+  float: right;
+  margin-right: 30%;
+  padding-top: 6%;
+}
+
+.message-billede-venstre {
+  width: 10%;
+  float: left;
+  margin-left: 5%;
+  margin-top: 3%;
+}
+
+.chatrum-chatbesked-hoejre {
+  background-color: #F5F5F5;
+  border-radius: 50px 50px 50px 50px;
+  padding: 3%;
+  padding-left: 5%;
+  margin-top: 5%;
+  margin-right: 13%;
+  margin-left: 16%;
+  text-align: left;
+}
+
+.message-billede-hoejre {
+  width: 10%;
+  float: right;
+  margin-right: 5%;
+  margin-top: 1%;
+
+}
+
+.chatrum-chatbesked-venstre {
+  background-color: #FFB828;
+  border-radius: 50px 50px 50px 50px;
+  padding: 3%;
+  padding-left: 5%;
+  margin-top: 5%;
+  margin-left: 15%;
+  margin-right: 16%;
+  text-align: right;
+}
+
+.message-billede-venstre-2 {
+  width: 10%;
+  float: left;
+  margin-left: 5%;
+  margin-top: -0.5%;
+}
+
+.chatrum-chatbesked-hoejre-2 {
+  background-color: #F5F5F5;
+  border-radius: 50px 50px 50px 50px;
+  padding: 3%;
+  padding-left: 5%;
+  margin-top: 5%;
+  margin-right: 12%;
+  margin-left: 16%;
+  text-align: left;
+}
+
 
 /* ---------- PROFILE (laurids) ---------- */
 #profile {
