@@ -240,7 +240,7 @@
   </section>
   <button onclick="home()" class="done">Done</button>
 
- 
+
 
 
 
@@ -251,12 +251,12 @@
     <header class="topbar">
       <h2 class="home_h2">Home</h2>
       <div id="input_container">
-        <input class="search" type="search" placeholder="Search for meetups">
+        <input class="search" type="search" placeholder="Search for meetups" onkeyup="search(this.value)">
         <img src="img/search-yellow.png" width="20%" id="input_img">
       </div>
     </header>
-
-    <img class="kryds" src="img/kryds.svg" width="17%">
+    <button onclick="createevent()" class="done">
+      <img class="kryds" src="img/kryds.svg" width="17%"></button>
 
     <div class="hvid_boks">
       <h2 class="floorball">Floorball</h2>
@@ -282,6 +282,9 @@
       </div>
       <img class="floorball_img" src="img/fodbold.jpg" width="100%">
     </div>
+    <br>
+    <br>
+    <br>
   </section>
 
   <!-- about page (rasmus)
@@ -374,9 +377,70 @@
     <br>
     <br>
     <br>
+    <br>
+    <br>
+    <br>
   </section>
 
+  <section id=createevent class="page">
+    <header class="topbar-til-gul-overskrift">
+      <div class="flex-items-gul-overskrift">
+        <div><button onclick="goBack()"><img src="img/arrow-yellow.png" alt="tilbage" class="gul-pil-tilbage"></button>
+        </div>
+        <div>
+          <h2 class="orange-h2">Find Homies</h2>
+        </div>
+        <div><img src="img/search-yellow.png" alt="søg" class="gul-search"></div>
+      </div>
+    </header>
+    <div class="boks-bag-billede"><img src="img/kamera.png" alt="foto" class="indsaet-foto"></div>
+    <div id="firstandlastnameflex"></div>
 
+    <!-- jacob/schytz -->
+    <div class="profiletext">
+      <h5 class="profileh5">Meetup name</h5>
+      <h4 class="profileh4">Football</h4>
+    </div>
+    <hr class="hrprofile">
+
+    <!-- Info om profilen - lokation, beskæftigelse osv. -->
+    <div class="profiletext">
+      <h5 class="profileh5">Category</h5>
+      <h4 class="profileh4">Sport, football</h4>
+    </div>
+    <hr class="hrprofile">
+
+    <div class="profiletext">
+      <h5 class="profileh5">Date and time</h5>
+      <h4 class="profileh4">07-10-2020 at 20:40</h4>
+    </div>
+    <hr class="hrprofile">
+
+    <div class="profiletext">
+      <h5 class="profileh5">Location</h5>
+      <h4 class="profileh4">Risskov</h4>
+    </div>
+    <hr class="hrprofile">
+
+    <div class="profiletext">
+      <h5 class="profileh5">Description</h5>
+      <h4 class="profileh4">A cozy game of football</h4>
+    </div>
+    <hr class="hrprofile">
+
+    <div class="profiletext">
+      <h5 class="profileh5">Maximum participants</h5>
+      <h4 class="profileh4">14</h4>
+    </div>
+    <hr class="hrprofile">
+
+
+
+
+    <!-- Create event knap -->
+    <button onclick="yourmeetups()">Create event</button>
+  </section>
+  </section>
 
   <!-- chat page (pernille) -->
   <section id="clients" class="page">
@@ -450,6 +514,12 @@
       <p class="chatrum-chatbesked-hoejre-2">Det lyder super! Vi ses senere!</p>
     </div>
 
+    <form action="/action_page.php">
+      <label for="fname"></label><br>
+      <input type="text" id="message-box" name="fname" placeholder="Skriv en besked..">
+      <!-- <input type="submit" value="Submit"> -->
+    </form>
+    <img src="img/send-besked.png" alt="send" class="send-besked-ikon">
   </section>
   <!-- contact page
   <section id="profile" class="page">
@@ -460,7 +530,7 @@
   </section>
    -->
 
-  <!-- PROFILE PAGE (laurids) -->
+  <!-- PROFILE PAGE (Laurids) -->
   <section id="profile" class="page">
     <header>
       <div id="profileheaderflex">
@@ -526,9 +596,9 @@
     <button onclick="yourmeetups()">Your Meetups</button>
   </section>
 
-  <!-- profile page - KOPIER HER NED TIL ------------------------------------------------------------------------------- -->
+  <!-- profile page slut ------------------------------------------------------------------------------- -->
 
-  <!-- YOUR MEETUPS START----------------------------- -->
+  <!-- YOUR MEETUPS START (Laurids) ----------------------------- -->
 
 
   <section id="yourmeetups" class="page">

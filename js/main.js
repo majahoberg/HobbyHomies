@@ -69,6 +69,9 @@ function yourmeetups() {
   showPage("yourmeetups")
 }
 
+function createevent() {
+  showPage("createevent")
+}
 
 // sign out user
 function logout() {
@@ -89,22 +92,21 @@ function goBack() {
 }
 
 
+/*
+//Søgefunktion
 
-
-
-// accordion fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion
-
-let acc = document.getElementsByClassName("accordion");
-let i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
+function search(value) {
+  console.log(value);
+  let filteredTeachers = [];
+  for (let teacher of teachers) {
+    let name = teacher.name.toLowerCase();
+    if (name.includes(value.toLowerCase())) {
+      filteredTeachers.push(teacher);
     }
-  });
+  }
+
+  console.log(filteredTeachers);
+  appendTeachers(filteredTeachers);
 }
+
+*/
