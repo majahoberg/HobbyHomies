@@ -652,6 +652,10 @@ button {
 
 
 /* ---------- PROFILE (laurids) ---------- */
+#profile {
+  background-color: white;
+}
+
 
 #profilflex {
   display: flex;
@@ -668,14 +672,16 @@ button {
   
 }
 .profilearrow{
-  width: 12%;
-  margin-right: 50%;
+  width: 9.5%;
+  margin-right: 65%;
+  margin-top: 3px;
   
 }
 
 .profilearrow2{
-  width: 12%;
-  margin-left: 50%;
+  width: 9.5%;
+  margin-top: 3px;
+  margin-left: 60%;
   
 }
 
