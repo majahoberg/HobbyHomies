@@ -32,7 +32,7 @@
 
             .cls-1,
             .cls-2 {
-              stroke-miterlimit: 10;
+              stroke-miterlimit: 8;
               stroke-width: 0.9px;
             }
 
@@ -141,7 +141,7 @@
             .a107bf30-7377-4cd6-ba05-5a67c66a7e4c {
               fill: none;
               stroke: #b9b9b9;
-              stroke-width: 1.5px;
+              stroke-width: 0.9px;
             }
           </style>
         </defs>
@@ -195,7 +195,7 @@
             transform="translate(-287.1 -414.59)" />
           <circle class="e4e7baba-5940-47b3-8fc4-fb45ae99d495" cx="13.69" cy="7.71" r="7.26" />
         </g>
-      </svg> <br>Profile</a>
+      </svg> <br><span id="profiletext">Profile</span></a>
   </nav>
 
 
@@ -376,8 +376,15 @@
 
   <!-- chat page (rasmus) -->
   <section id="clients" class="page">
-    <header class="topbar">
-      <h2>Clients</h2>
+    <header class="topbar-til-gul-overskrift">
+      <div class="flex-items-gul-overskrift">
+        <div><button onclick="goBack()"><img src="img/arrow-yellow.png" alt="tilbage" class="gul-pil-tilbage"></button>
+        </div>
+        <div>
+          <h2 class="orange-h2">Chat</h2>
+        </div>
+        <div><img src="img/search-yellow.png" alt="søg" class="gul-search"></div>
+      </div>
     </header>
     <p>Hmm, there should be some clients right here...</p>
   </section>

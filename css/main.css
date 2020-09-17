@@ -20,11 +20,13 @@ body {
   margin: 0;
 }
 
-svg{width: 50%;}
+svg {
+  width: 50%;
+}
 
-.tabbar{
-display: flex;
-justify-content: center;
+.tabbar {
+  display: flex;
+  justify-content: center;
 }
 
 
@@ -136,20 +138,27 @@ RAMSUS's STYLING
 #stroke-2,
 .a7c32b84-4138-4909-b105-8352f2be7c0d {
   stroke-miterlimit: 10;
-  stroke-width: 1.7px;
+  stroke-width: 0.9px;
 }
 
 .chat-ikon {
- width: 65%;
- position: relative;
-bottom: 5px;
+  width: 65%;
+  position: relative;
+  bottom: 5px;
 }
 
-.find-homies-ikon {
+.find-homies-ikon {}
 
+#chattext {
+  position: relative;
+  top: -11.5px;
 }
-#chattext{position: relative;
-  top: -12px;}
+
+#profiletext {
+  position: relative;
+  top: 1.5px;
+}
+
 .profil-ikon {
   width: 40%;
 }
@@ -183,7 +192,7 @@ a.active .a107bf30-7377-4cd6-ba05-5a67c66a7e4c {
 
 a.active .a36e720b-d937-4684-923d-4a06bce395ee {
   fill: #FFB828;
-  stroke: white;
+  stroke: white 2px;
 }
 
 
@@ -230,7 +239,7 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   z-index: ;
 }
 
-.home_h2  {
+.home_h2 {
   position: relative;
   z-index: 1;
   color: white;
@@ -241,31 +250,31 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   width: 330px;
   padding: 14px;
   border: none;
-  margin-top:25px;
+  margin-top: 25px;
   border-radius: 4px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 #input_container {
-    position:relative;
+  position: relative;
 }
 
 #input_img {
-    position:absolute;
-    bottom:13%;
-    left:80%;
-    width:24px;
+  position: absolute;
+  bottom: 13%;
+  left: 80%;
+  width: 24px;
 }
 
 .hvid_boks {
   background-color: white;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-   border: none;
-   position: relative;
-   margin:10%;
-   z-index: 1;
-   border-radius: 4px;
-   text-align: justify;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: none;
+  position: relative;
+  margin: 10%;
+  z-index: 1;
+  border-radius: 4px;
+  text-align: justify;
 }
 
 
@@ -283,7 +292,7 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   color: #939393;
   text-align: left;
   padding-top: 5px;
-  font-size:0.8em;
+  font-size: 0.8em;
   margin: 0;
   padding-left: 20px;
 }
@@ -301,7 +310,7 @@ h2.floorball {
   position: sticky;
   left: 80%;
   top: 76.239012931293%;
-  z-index:2;
+  z-index: 2;
 
 
 }
@@ -309,7 +318,8 @@ h2.floorball {
 
 
 /*----------- LOGIN FORSIDE (tine) -------------*/
-h1.find-your-new, h1.hobby-homies {
+h1.find-your-new,
+h1.hobby-homies {
   color: var(--orange);
   margin: 2px;
 }
@@ -331,12 +341,12 @@ img.orange {
 .container {
   position: relative;
   background-color: white;
-  margin:12%;
-  margin-top:150px;
+  margin: 12%;
+  margin-top: 150px;
   z-index: 1;
-  padding-top:15%;
-  padding-bottom:25%;
-   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-top: 15%;
+  padding-bottom: 25%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 
@@ -491,7 +501,7 @@ img.orange {
   background-color: var(--light-grey);
   text-transform: capitalize;
   color: var(--text-color-dark);
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14), 0 3px 1px -2px rgba(0,0,0,.2), 0 1px 5px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 3px 1px -2px rgba(0, 0, 0, .2), 0 1px 5px 0 rgba(0, 0, 0, .12);
   border-radius: 20px;
 }
 
@@ -609,20 +619,20 @@ button {
 
 /* ---------- PROFILE (laurids) ---------- */
 
-#profilflex{
+#profilflex {
   display: flex;
   justify-content: space-between;
 
 }
 
 /* top ikon til højre */
-.blyant{
+.blyant {
   width: 20%;
   float: right;
 }
 
 /* top ikon til venstre (tilbage) */
-.tilbagepil{
+.tilbagepil {
   width: 10%;
   float: left;
 }
@@ -634,8 +644,8 @@ img.orangeabsolute {
   left: 0;
 }
 
-  /*Profilbillede af Jacob*/
-.jacobprofilbillede{
+/*Profilbillede af Jacob*/
+.jacobprofilbillede {
   width: 150px;
   position: absolute;
   top: 200px;
@@ -643,7 +653,7 @@ img.orangeabsolute {
   z-index: 999999;
 }
 
-#firstandlastnameflex{
+#firstandlastnameflex {
   color: gray;
   display: flex;
   justify-content: space-between;
@@ -651,7 +661,7 @@ img.orangeabsolute {
   margin-top: 35%;
 }
 
-#jacobschytzflex{
+#jacobschytzflex {
   color: black;
   display: flex;
   justify-content: space-between;
@@ -660,35 +670,35 @@ img.orangeabsolute {
 }
 
 /*Info tekst */
-.profiletext{
+.profiletext {
   text-align: left;
   margin: 0;
   margin-left: 6%;
 }
 
 /*Stregerne på siden (HR)*/
-.hrprofile{
+.hrprofile {
   margin-bottom: 5%;
   height: 0.3px;
   width: 87%;
 }
 
 /*Overskrift (name, location, occupation)*/
-.profileh5{
+.profileh5 {
   color: grey;
   margin: 0;
   margin-bottom: 10px;
 }
 
 /*Info (Jacob, Aarhus, student) */
-.profileh4{
+.profileh4 {
   color: black;
   margin: 0;
   margin-bottom: 5px;
 }
 
 /*Knappen på profile*/
-#profile > button {
+#profile>button {
   background-color: var(--orange);
   color: white;
   border: none;
@@ -696,7 +706,8 @@ img.orangeabsolute {
   padding: 6px;
   padding-left: 30px;
   padding-right: 30px;
-  transition: transform .2s; /* Animation */
+  transition: transform .2s;
+  /* Animation */
   z-index: 999999;
   font-weight: 600;
   margin-top: 5%;
@@ -704,7 +715,7 @@ img.orangeabsolute {
 }
 
 button:active {
-  transform: scale(0.9); 
+  transform: scale(0.9);
 }
 
 /*KOPIER HER NED TIL-----------------------------------------------------------------------*/
