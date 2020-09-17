@@ -24,14 +24,6 @@ svg {
   width: 50%;
 }
 
-.tabbar {
-  display: flex;
-  justify-content: center;
-}
-
-
-
-
 /* GUL GRADIENT 
 background: rgb(255,220,107);
 background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 100%); 
@@ -113,6 +105,8 @@ RAMSUS's STYLING
 
 /* ---------- tabbar styling (meget af det er lavet af rasmus) ---------- */
 .tabbar {
+  display: flex;
+  justify-content: center;
   background: white;
   box-shadow: 0px -4px 39px -23px rgba(0, 0, 0, 0.75);
   position: fixed;
@@ -148,7 +142,6 @@ RAMSUS's STYLING
   bottom: 5px;
 }
 
-.find-homies-ikon {}
 
 #chattext {
   position: relative;
@@ -232,6 +225,22 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   padding: 0;
 }
 
+/* ---------- pick your interests (maja) ---------- */
+#select-category {
+  border: none;
+  position: relative;
+  margin: 10%;
+  z-index: 1;
+  border-radius: 4px;
+  min-height: calc(100vh - -100px);
+
+}
+
+.mdl-js {
+  background-color: var(--light-grey);
+}
+
+ 
 
 
 /* ---------- home page (tine) ---------- */
@@ -360,7 +369,7 @@ img.orange {
   left: 0;
   bottom: 0;
   right: 0;
-  animation: bagggrund-fade 3.7s;
+  animation: bagggrund-fade 3.5s;
 }
 
 .hide {
@@ -405,32 +414,32 @@ img.orange {
     transform: rotate(180deg);
   }
 
-  99% {
-    opacity: 0;
+  75% {
+    opacity: 1;
   }
 
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
 @keyframes hide {
-  99% {
-    opacity: 0;
+  75% {
+    opacity: 1;
   }
 
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
 @keyframes baggrund-fade {
-  90% {
-    opacity: 0;
+  75% {
+    opacity: 1;
   }
 
   100% {
-    opacity: 1;
+    opacity: 0;
   }
 }
 
