@@ -43,7 +43,6 @@ function pageChange() {
 
   if (page === "interests" || page === "login") {
     hideTabbar(true);
-
   } else {
     hideTabbar(false);
   }

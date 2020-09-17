@@ -520,6 +520,35 @@ img.orange {
   background-color: var(--orange);
 }
 
+/* firebase's default "forgot password" */
+.firebaseui-link.firebaseui-id-secondary-link {
+  visibility: hidden;
+}
+
+/* Forgot password */
+.firebaseui-link.firebaseui-id-secondary-link:after {
+  visibility: visible;
+  content: 'Forgot password?';
+  display: block;
+  background-color: white;
+  box-shadow: none;
+  font-weight: 600;
+  margin-top: -55px;
+  margin-left: 165px;
+  font-size: 9pt;
+
+
+}
+
+/* både forgot password og sign in */
+.firebaseui-card-actions {
+  display: grid;
+}
+
+/* sign in */
+.firebaseui-id-submit.firebaseui-button.mdl-button.mdl-js-button.mdl-button--raised.mdl-button--colored {
+  margin-top: 0px;
+}
 
 
 
@@ -653,6 +682,10 @@ button {
 }
 
 /* ---------- PROFILE (laurids) ---------- */
+#profile {
+  background-color: white;
+}
+
 
 #profilflex {
   display: flex;
@@ -664,19 +697,22 @@ button {
   display: flex;
   position: absolute;
   top: 20px;
-  z-index: 1;
+  z-index: 99999;
   margin: auto;
+
 }
 
 .profilearrow {
-  width: 12%;
-  margin-right: 50%;
+  width: 9.5%;
+  margin-right: 65%;
+  margin-top: 3px;
 
 }
 
 .profilearrow2 {
-  width: 12%;
-  margin-left: 50%;
+  width: 9.5%;
+  margin-top: 3px;
+  margin-left: 60%;
 
 }
 
@@ -700,7 +736,7 @@ button {
 img.orangeabsolute {
   z-index: 0;
   position: absolute;
-  top: 0;
+  top: -75px;
   left: 0;
 }
 
@@ -708,9 +744,9 @@ img.orangeabsolute {
 .jacobprofilbillede {
   width: 150px;
   position: absolute;
-  top: 200px;
+  top: 125px;
   left: 33%;
-  z-index: 999999;
+  z-index: 999;
 }
 
 #firstandlastnameflex {
@@ -768,14 +804,14 @@ img.orangeabsolute {
   padding-right: 30px;
   transition: transform .2s;
   /* Animation */
-  z-index: 999999;
+  z-index: 999999999999999;
   font-weight: 600;
-  margin-top: 5%;
-  margin-bottom: 10%;
+  margin-bottom: 30%;
+  width: 50%;
+  height: 30px;
 }
 
 button:active {
   transform: scale(0.9);
-}
-
-/*KOPIER HER NED TIL-----------------------------------------------------------------------*/
+  50
+  /*KOPIER HER NED TIL-----------------------------------------------------------------------*/
