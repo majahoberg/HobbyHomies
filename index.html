@@ -377,7 +377,7 @@
 
 
 
-  <!-- chat page (rasmus) -->
+  <!-- chat page (pernille) -->
   <section id="clients" class="page">
     <header class="topbar-til-gul-overskrift">
       <div class="flex-items-gul-overskrift">
@@ -389,9 +389,67 @@
         <div><img src="img/search-yellow.png" alt="søg" class="gul-search"></div>
       </div>
     </header>
+    <div class="chat-felt">
+      <a href="#chat-rum"><img src="img/maja-rund.png" alt="maja" class="chat-billede-enkelt">
+        <h3 class="chat-navn-overskrift">Maja</h3>
+        <p class="chat-text">Maja: Det lyder super! Vi ses s….</p>
+      </a>
+      <hr class="chat-streger">
+    </div>
+
+    <div class="chat-felt">
+      <img src="img/hockey-chat.png" alt="maja" class="chat-billede-enkelt">
+      <h3 class="chat-navn-overskrift">Hockey meet-up 20/7/19</h3>
+      <p class="chat-text">Laurids: Er i klar på endnu en….</p>
+      <hr class="chat-streger">
+    </div>
+
+    <div class="chat-felt">
+      <img src="img/curling-chat.png" alt="maja" class="chat-billede-enkelt">
+      <h3 class="chat-navn-overskrift">Curling meet-up 24/12/20</h3>
+      <p class="chat-text">Tine: Jubi! Jeg glæder mig til …</p>
+      <hr class="chat-streger">
+    </div>
+
+    <div class="chat-felt">
+      <img src="img/laurids-rund.png" alt="laurids" class="chat-billede-enkelt">
+      <h3 class="chat-navn-overskrift">Laurids</h3>
+      <p class="chat-text">Tine: Jubi! Jeg glæder mig til …</p>
+      <hr class="chat-streger">
+    </div>
+
+    <div class="chat-felt">
+      <img src="img/pernille-rund.png" alt="pernille" class="chat-billede-enkelt">
+      <h3 class="chat-navn-overskrift">Pernille</h3>
+      <p class="chat-text">Dig: Hvornår skal vi mødes?.....</p>
+      <hr class="chat-streger">
+    </div>
   </section>
 
+  <section id="chat-rum" class="page">
+    <header class="topbar-til-gul-overskrift">
+      <div class="flex-items-gul-overskrift">
+        <div><button onclick="goBack()"><img src="img/arrow-yellow.png" alt="tilbage" class="gul-pil-tilbage"></button>
+        </div>
+        <div>
+          <img src="img/maja-rund.png" alt="maja" class="chatrum-billede">
+          <h4 class="h4-chat-navn">Maja</h4>
+        </div>
+        <div><img src="img/search-yellow.png" alt="søg" class="gul-search"></div>
+      </div>
+    </header>
+    <div class="chat-blok"><img src="img/maja-rund.png" alt="maja" class="message-billede-venstre">
+      <p class="chatrum-chatbesked-hoejre">Hey! Hvornår skal vi mødes til badminton? 😃</p>
+    </div>
 
+    <div class="chat-blok"><img src="img/jacob-rund.png" alt="jacob" class="message-billede-hoejre">
+      <p class="chatrum-chatbesked-venstre">Hmm, kl. 16? Passer det dig?🤗</p>
+    </div>
+    <div class="chat-blok"><img src="img/maja-rund.png" alt="maja" class="message-billede-venstre-2">
+      <p class="chatrum-chatbesked-hoejre-2">Det lyder super! Vi ses senere!</p>
+    </div>
+
+  </section>
   <!-- contact page
   <section id="profile" class="page">
     <header class="topbar">
@@ -464,12 +522,75 @@
     <hr class="hrprofile">
 
     <!-- Your meetups knap -->
-    <button>Your Meetups</button>
+    <button onclick="yourmeetups()">Your Meetups</button>
   </section>
 
   <!-- profile page - KOPIER HER NED TIL ------------------------------------------------------------------------------- -->
 
+  <!-- YOUR MEETUPS START----------------------------- -->
 
+
+  <section id="yourmeetups" class="page">
+    <header class="topbar-til-gul-overskrift">
+      <div class="flex-items-gul-overskrift">
+        <div><button onclick="goBack()"><img src="img/arrow-yellow.png" alt="tilbage" class="gul-pil-tilbage"></button>
+        </div>
+        <div>
+          <h2 class="orange-h2">Your Meetups</h2>
+        </div>
+        <div><img src="img/search-yellow.png" alt="søg" class="gul-search"></div>
+      </div>
+    </header>
+
+    <!-- 3 gule sektioner -->
+    <div class="find-homies-profiler">
+
+      <div class="flexmeetups">
+        <div>
+          <h2 class="yourmeetupsh">Upcoming Meetups</h2>
+        </div>
+        <div>
+          <img class="meetuppil" src="/img/arrow-white.png" alt="">
+        </div>
+      </div>
+
+
+    </div>
+
+    <div class="find-homies-profiler">
+
+      <div class="flexmeetups">
+        <div>
+          <h2 class="yourmeetupsh">Saved Meetups</h2>
+        </div>
+        <div>
+          <img class="meetuppil" src="/img/arrow-white.png" alt="">
+        </div>
+      </div>
+
+
+    </div>
+
+
+
+    <div class="find-homies-profiler">
+
+      <div class="flexmeetups">
+        <div>
+          <h2 class="yourmeetupsh">Previous Meetups</h2>
+        </div>
+        <div>
+          <img class="meetuppil" src="/img/arrow-white.png" alt="">
+        </div>
+      </div>
+
+
+    </div>
+
+    <br><br><br><br><br><br>
+
+
+  </section>
 
 
 

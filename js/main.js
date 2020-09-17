@@ -3,17 +3,17 @@
 // ========== Firebase sign in functionality ========== //
 
 // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  const firebaseConfig = {
-    apiKey: "AIzaSyB-4KTzeiWlMv0RkZFrdhPjHqWGY5DwDBU",
-    authDomain: "web-app-ae1f3.firebaseapp.com",
-    databaseURL: "https://web-app-ae1f3.firebaseio.com",
-    projectId: "web-app-ae1f3",
-    storageBucket: "web-app-ae1f3.appspot.com",
-    messagingSenderId: "409005069691",
-    appId: "1:409005069691:web:983769dc4b050df29ad9de",
-    measurementId: "G-8XVHT8Y30Z"
-  };
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyB-4KTzeiWlMv0RkZFrdhPjHqWGY5DwDBU",
+  authDomain: "web-app-ae1f3.firebaseapp.com",
+  databaseURL: "https://web-app-ae1f3.firebaseio.com",
+  projectId: "web-app-ae1f3",
+  storageBucket: "web-app-ae1f3.appspot.com",
+  messagingSenderId: "409005069691",
+  appId: "1:409005069691:web:983769dc4b050df29ad9de",
+  measurementId: "G-8XVHT8Y30Z"
+};
 
 
 
@@ -65,7 +65,9 @@ function userNotAuthenticated() {
   showLoader(false);
 }
 
-
+function yourmeetups() {
+  showPage("yourmeetups")
+}
 
 
 // sign out user
