@@ -352,7 +352,7 @@ img.orange {
 
 /* ---------- LOADING ANIMATION (pernille) ---------- */
 #loader {
-  z-index: 5;
+  z-index: 10000000;
   background: rgb(255, 220, 107);
   background: linear-gradient(0deg, rgba(255, 220, 107, 1) 7%, rgba(255, 184, 40, 1) 39%);
   position: absolute;
@@ -620,7 +620,37 @@ button {
   background-color: white;
 }
 
+.chat-billede-enkelt {
+  width: 18%;
+  margin-top: 4%;
+  float: left;
+  margin-left: 5%;
+  padding-bottom: 3%;
+}
 
+.chat-streger {
+  width: 52%;
+  height: 0.1px;
+  background-color: #C4C0BC;
+  border: 0;
+  padding-right: 16%;
+}
+
+.chat-navn-overskrift {
+  padding-top: 2%;
+  float: left;
+  padding-left: 4%;
+  font-size: 1em;
+}
+
+.chat-text {
+  float: left;
+  padding-left: 4%;
+  font-size: 1em;
+  padding-bottom: 3%;
+  margin-top: -0.5em;
+  text-align: justify;
+}
 
 /* ---------- PROFILE (laurids) ---------- */
 
@@ -630,28 +660,29 @@ button {
 
 }
 
-#profileheaderflex{
+#profileheaderflex {
   display: flex;
   position: absolute;
   top: 20px;
   z-index: 1;
   margin: auto;
 }
-.profilearrow{
+
+.profilearrow {
   width: 12%;
   margin-right: 50%;
-  
+
 }
 
-.profilearrow2{
+.profilearrow2 {
   width: 12%;
   margin-left: 50%;
-  
+
 }
 
-#profileh{
- color: white;
- margin: auto;
+#profileh {
+  color: white;
+  margin: auto;
 }
 
 /* top ikon til højre */
