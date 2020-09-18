@@ -33,7 +33,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function userAuthenticated(user) {
   appendUserData(user);
-  showPage("interests");
+  showPage("home");
   showLoader(false);
 }
 
@@ -91,7 +91,22 @@ function goBack() {
   window.history.back();
 }
 
+// accordion fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion
 
+let acc = document.getElementsByClassName("accordion");
+let i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    let panel = this.nextElementSibling;
+    if (panel.style.display === "block") {
+      panel.style.display = "none";
+    } else {
+      panel.style.display = "block";
+    }
+  });
+}
 /*
 //Søgefunktion
 
