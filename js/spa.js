@@ -1,5 +1,8 @@
 "use strict";
 
+// fra Rasmus Cederdorff
+
+
 // hide all pages
 function hideAllPages() {
   let pages = document.querySelectorAll(".page");

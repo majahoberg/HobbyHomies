@@ -33,15 +33,15 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function userAuthenticated(user) {
   appendUserData(user);
-  showPage("home");
+  showPage("interests");
   showLoader(false);
 }
 
-// function home() {
-//  showPage("home");
-//  hideTabbar(false); 
-//  document.getElementById("interests").style.display = 'none';
-//}
+ function home() {
+  showPage("home");
+  hideTabbar(false); 
+  document.getElementById("interests").style.display = 'none';
+}
 
 function meetup() {
   showPage("meetup");
