@@ -254,19 +254,29 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
   position: relative;
-  margin: 10%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: -2em;
+  margin-bottom: 18%;
   z-index: 1;
   border-radius: 4px;
   text-align: justify;
 }
 
+.hvid_boks_img {
+  margin-left: 4%;
+}
+
 .hvid_boks_img img {
-  padding: 12px 0px 12px 22px;
+  padding: 12px 0px 12px 2px;
+
 }
 
 .floorball_img {
   border-end-end-radius: 4px;
   margin-bottom: -5px;
+  height: 150px;
+
 }
 
 .meetup_info {
@@ -529,18 +539,120 @@ img.orange {
 
 
 
-/*----------------MEETUP (Tine)----------------*/
+/*----------------MEETUP (pernille)----------------*/
+#meetup {
+  background-color: white;
+}
+
 a {
   text-decoration: none;
 }
 
 button {
   background-color: #CDCACA;
+  color: #707070;
+  font-family: montserrat;
+  font-weight: bolder;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 .participate {
   background-color: #CDCACA;
+  margin-top: -5em;
   margin: 10px;
+}
+
+.meetup-overskrift {
+  color: #FFB828;
+  font-size: 1.4em;
+  float: left;
+  margin-left: 5%;
+}
+
+.bogmaerke {
+  width: 4%;
+  float: left;
+  padding-left: 2%;
+  margin-top: 6.5%;
+
+}
+
+.ur {
+  width: 4%;
+  float: left;
+  margin-top: 17%;
+  margin-left: -8em;
+}
+
+.lokation-graa {
+  width: 4%;
+  float: left;
+  margin-top: 25%;
+  margin-left: -212px;
+
+}
+
+.tid-tekst {
+  float: left;
+  margin-left: -6em;
+  margin-top: 17%;
+  color: #939393;
+}
+
+.sted-tekst {
+  float: left;
+  margin-top: 25%;
+  margin-left: -182px;
+  color: #939393;
+}
+
+.participants-overskrift {
+  float: left;
+  margin-top: 35%;
+  margin-left: -245px;
+}
+
+.tal-til-participants {
+  color: #939393;
+  font-size: 0.6em;
+}
+
+.flex-til-billeder>div>img {
+  width: 115%;
+}
+
+.flex-til-billeder {
+  display: flex;
+  float: left;
+  margin-top: 10%;
+  padding-right: 40%;
+  margin-left: 4%;
+  padding-bottom: 5%;
+}
+
+.flex-til-billeder>div {
+  flex-direction: row;
+  padding: 3%;
+}
+
+.h3-description {
+  margin-top: 40%;
+  margin-left: -258px;
+}
+
+.description-text {
+  margin-top: -2em;
+  text-align: justify;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.read-more {
+  font-weight: bolder;
+
 }
 
 /* ---------- FIND HOMIES (pernille) ---------- */
@@ -659,7 +771,8 @@ button {
   /* Animation */
   z-index: 999999999999999;
   font-weight: 700;
-  font-size: 16px;;
+  font-size: 16px;
+  ;
   margin-bottom: 30%;
   width: 40%;
   height: 40px;
@@ -911,7 +1024,8 @@ img.orangeabsolute {
   /* Animation */
   z-index: 999999999999999;
   font-weight: 700;
-  font-size: 16px;;
+  font-size: 16px;
+  ;
   margin-bottom: 30%;
   width: 40%;
   height: 40px;
