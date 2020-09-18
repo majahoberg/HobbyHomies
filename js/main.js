@@ -33,7 +33,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function userAuthenticated(user) {
   appendUserData(user);
-  showPage("home");
+  showPage("interests");
   showLoader(false);
 }
 
@@ -69,6 +69,9 @@ function yourmeetups() {
   showPage("yourmeetups")
 }
 
+function createevent() {
+  showPage("createevent")
+}
 
 // sign out user
 function logout() {
