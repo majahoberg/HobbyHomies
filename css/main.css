@@ -709,16 +709,17 @@ button {
   background-color: var(--orange);
   color: white;
   border: none;
-  border-radius: 22px;
-  padding: 10px;
+  border-radius: 15px;
+  padding: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
   transition: transform .2s;
   /* Animation */
   z-index: 999999999999999;
-  font-weight: 700;
-  font-size:16px;
+  font-weight: 600;
   margin-bottom: 30%;
-  width: 40%;
-  height: 40px;
+  width: 50%;
+  height: 30px;
 }
 
 button:active {
@@ -966,20 +967,20 @@ img.orangeabsolute {
 
 /*Knappen på profile*/
 #profile>button {
-  margin-top:15px;
   background-color: var(--orange);
   color: white;
   border: none;
-  border-radius: 22px;
-  padding: 10px;
+  border-radius: 15px;
+  padding: 6px;
+  padding-left: 30px;
+  padding-right: 30px;
   transition: transform .2s;
   /* Animation */
   z-index: 999999999999999;
-  font-weight: 700;
-  font-size:16px;
+  font-weight: 600;
   margin-bottom: 30%;
-  width: 40%;
-  height: 40px;
+  width: 50%;
+  height: 30px;
 }
 
 button:active {
