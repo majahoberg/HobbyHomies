@@ -18,9 +18,7 @@
 
 <body onhashchange="pageChange()">
 
-
-
-  <!-- tabbar navigation -->
+  <!-- tabbar navigation (Inpiration fra Rasmus Cederdorff) -->
   <nav class="tabbar">
     <a href="#home"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 34.5 32.39">
         <defs>
@@ -199,19 +197,15 @@
   </nav>
 
 
-
-
-
-  <!-- LOADING PAGE (pernille) -->
+  <!-- LOADING PAGE (Pernille) -->
   <section id="loader" class="page">
     <img src="img/logo.png" alt="logo" id="logo-animation"><br>
     <h1 class="velkomst-overskrift">Hobby Homies</h1>
   </section>
 
 
-  <!-- login page -->
+  <!-- login page (Maja & Tine) -->
   <section id="login" class="page">
-
     <div class="container">
       <h1 class="find-your-new">Find your new</h1>
       <h1 class="hobby-homies">Hobby Homies</h1>
@@ -222,23 +216,19 @@
   </section>
 
 
-  <!-- PICK YOUR INTERESTS PAGE (maja) -->
+  <!-- PICK YOUR INTERESTS PAGE (Maja & Tine) -->
   <section id="interests" class="page">
     <img class="orange" src="img/baggrund1.png" alt="" width="100%">
     <header class="topbar">
       <h2 class="home_h2">Pick your interests</h2>
     </header>
- 
     <div id="posts" class="categories"></div>
   <button onclick="home()" class="done">Done</button>
 </section>
 
 
-
-
-
   <!-- PAGES -->
-  <!-- HOME PAGE (tine) -->
+  <!-- HOME PAGE (Tine) -->
   <section id="home" class="page">
     <img class="orange" src="img/baggrund1.png" alt="" width="100%">
     <header class="topbar">
@@ -267,7 +257,6 @@
       </div>
     </a>
 
-
     <div class="hvid_boks">
       <h2 class="floorball">Football</h2>
       <p class="meetup_info"><img src="img/clock (1).svg" width="5%"> 9 december 2020 at 17:00</p>
@@ -284,7 +273,7 @@
     <br>
   </section>
 
-  <!----------MEETUP------------->
+  <!----------MEETUP (Tine & Pernille) ------------->
   <section id="meetup" class="page">
     <header class="topbar-til-gul-overskrift">
       <div class="flex-items-gul-overskrift">
@@ -303,31 +292,6 @@
     <button class="participate">Group chat</button>
   </section>
 
-
-  <!-- about page (rasmus)
-   <section id="about" class="page">
-    <header class="topbar">
-      <h2>About</h2>
-    </header>
-    <p>This is my about page</p>
-  </section> 
--->
-
-  <!-- find homies page - topbar (laurids) 
-  <section id="about" class="page">
-    <header class="topbar-til-gul-overskrift">
-      <div class="flex-items-gul-overskrift">
-        <div><img src="img/arrow-yellow.png" alt="tilbage" class="gul-pil-tilbage"></div>
-        <div>
-          <h2 class="orange-h2">Find Homies</h2>
-        </div>
-        <div><img src="img/search-yellow.png" alt="søg" class="gul-search"></div>
-      </div>
-    </header>
-  </section>
--->
-
-
   <!-- FIND HOMIES PAGE (pernille) -->
   <!-- header -->
   <section id="about" class="page">
@@ -342,7 +306,7 @@
       </div>
     </header>
 
-    <!-- find homies profiler -->
+  <!-- find homies profiler -->
     <div class="find-homies-profiler">
       <img src="img/maja-rund.png" alt="maja-profilbillede" class="profil-billede">
       <p><span class="navn-og-alder">Maja, 20</span><br>
@@ -451,9 +415,6 @@
     </div>
     <hr class="hrprofile">
 
-
-
-
     <!-- Create event knap -->
     <button onclick="yourmeetups()">Create event</button>
   </section>
@@ -538,14 +499,6 @@
     </form>
     <img src="img/send-besked.png" alt="send" class="send-besked-ikon">
   </section>
-  <!-- contact page
-  <section id="profile" class="page">
-    <header class="topbar">
-      <h2>Profile</h2>
-      <a class="right" href="#" onclick="logout()">Logout</a>
-    </header>
-  </section>
-   -->
 
   <!-- PROFILE PAGE (Laurids) -->
   <section id="profile" class="page">
@@ -616,8 +569,6 @@
   <!-- profile page slut ------------------------------------------------------------------------------- -->
 
   <!-- YOUR MEETUPS START (Laurids) ----------------------------- -->
-
-
   <section id="yourmeetups" class="page">
     <header class="topbar-til-gul-overskrift">
       <div class="flex-items-gul-overskrift">

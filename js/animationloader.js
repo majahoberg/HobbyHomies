@@ -1,6 +1,6 @@
 "use strict";
 
-// (pernille)
+// Pernille
 
 class Loader {
     constructor() {

@@ -1,9 +1,7 @@
 "use strict";
 
-// ========== Firebase sign in functionality ========== //
-
-// Your web app's Firebase configuration
-// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+// ========== Firebase sign in functionality (Maja & Tine) ========== //
+// Firebase configuration
 const firebaseConfig = {
   apiKey: "AIzaSyB-4KTzeiWlMv0RkZFrdhPjHqWGY5DwDBU",
   authDomain: "web-app-ae1f3.firebaseapp.com",
@@ -14,8 +12,6 @@ const firebaseConfig = {
   appId: "1:409005069691:web:983769dc4b050df29ad9de",
   measurementId: "G-8XVHT8Y30Z"
 };
-
-
 
 // Initialize Firebase
 firebase.initializeApp(firebaseConfig);
@@ -34,26 +30,12 @@ firebase.auth().onAuthStateChanged(function (user) {
 function userAuthenticated(user) {
   appendUserData(user);
   showPage("home");
-  showLoader(false);
-}
-
-
- function home() {
-  showPage("home");
-  hideTabbar(false); 
-  document.getElementById("interests").style.display = 'none';
-}
-
-
-
-function meetup() {
-  showPage("meetup");
 }
 
 function userNotAuthenticated() {
   showPage("login");
 
-  // Firebase UI configuration
+ // Firebase UI configuration (Inspiration fra Rasmus Cederdorff)
   const uiConfig = {
     credentialHelper: firebaseui.auth.CredentialHelper.NONE,
     signInOptions: [
@@ -67,37 +49,43 @@ function userNotAuthenticated() {
     _firebaseUI = new firebaseui.auth.AuthUI(firebase.auth());
   }
   _firebaseUI.start('#firebaseui-auth-container', uiConfig);
-  showLoader(false);
 }
 
-function yourmeetups() {
-  showPage("yourmeetups")
-}
-
-function createevent() {
-  showPage("createevent")
-}
-
-// sign out user
-function logout() {
-  firebase.auth().signOut();
-}
-
+// appends name with firebase under profile (via firebase) (Maja med inpiration fra Rasmus Cederdorff)
 function appendUserData(user) {
   document.querySelector('#profilename').innerHTML += `
     <h4>${user.displayName}</h4>
   `;
 }
 
-
-// gå til forrige side funktion (pernille)
-
+// gå til forrige side funktion (Pernille)
 function goBack() {
   window.history.back();
 }
 
-// accordion fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion (tine & maja)
+// Laurids
+function yourmeetups() {
+  showPage("yourmeetups")
+}
 
+// Pernille
+function createevent() {
+  showPage("createevent")
+}
+
+// Tine & Maja
+function home() {
+  showPage("home");
+  hideTabbar(false); 
+  document.getElementById("interests").style.display = 'none';
+}
+
+// Tine
+function meetup() {
+  showPage("meetup");
+}
+
+// accordion fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion (Tine & Maja)
 let acc = document.getElementsByClassName("accordion");
 let i;
 

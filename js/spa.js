@@ -36,7 +36,7 @@ function navigateTo(pageId) {
 }
 
 // set default page or given page by the hash url
-// function is called 'onhashchange'
+// function is called 'onhashchange' (Tine & Maja med hjælp fra Rasmus Cederdorff)
 function pageChange() {
   let page = "loader";
   if (location.hash) {
@@ -51,10 +51,9 @@ function pageChange() {
   }
 }
 
-
 pageChange(); // called by default when the app is loaded for the first time
 
-// show and hide tabbar
+// show and hide tabbar (Tine & Maja med hjælp fra Rasmus Cederdorff)
 function hideTabbar(hide) {
   let tabbar = document.querySelector('.tabbar');
   if (hide) {
@@ -63,16 +62,3 @@ function hideTabbar(hide) {
     tabbar.classList.remove("hide");
   }
 }
-
-
-/*
-function showLoader(show) {
-  let loader = document.querySelector('#loader');
-  if (show) {
-    loader.classList.remove("hide");
-  } else {
-    loader.classList.add("hide");
-  }
-}
-
-*/

@@ -29,7 +29,7 @@ background: rgb(255,220,107);
 background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 100%); 
 */
 
-/* ---------- TOPBAR STYLING (pernille) ---------- */
+/* ---------- TOPBAR STYLING (Pernille) ---------- */
 .orange-h2 {
   color: #FFB828;
 }
@@ -61,49 +61,7 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   padding-right: 20px;
 }
 
-/* 
-.topbar {
-  color: white;
-  padding: 13.5px;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
-}
-
-.topbar h2 {
-  margin: 0;
-  font-weight: 800;
-}
-
-
-RAMSUS's STYLING 
-
-.topbar h2 {
-  margin: 0;
-  font-weight: 300;
-}
-
-.topbar a {
-  text-decoration: none;
-  color: var(--text-color-light);
-  position: absolute;
-  top: 20px;
-}
-
-.topbar a.left {
-  left: 20px;
-}
-
-.topbar a.right {
-  right: 20px;
-}
-*/
-
-
-
-/* ---------- tabbar styling (meget af det er lavet af rasmus) ---------- */
+/* ---------- tabbar styling (Inspiration fra Rasmus Cederdorff) ---------- */
 .tabbar {
   display: flex;
   justify-content: center;
@@ -129,6 +87,8 @@ RAMSUS's STYLING
   margin: 0;
   padding: 0;
 }
+
+/* Pernille */
 
 #stroke-2,
 .a7c32b84-4138-4909-b105-8352f2be7c0d {
@@ -156,7 +116,7 @@ RAMSUS's STYLING
   width: 40%;
 }
 
-/* Add a color to the active/current link */
+/* Add a color to the active/current link (Pernille) */
 .tabbar a.active {
   color: #FFB828;
 }
@@ -213,7 +173,7 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 
 
 
-/* ---------- page styling (rasmus) ---------- */
+/* ---------- page styling (Inspiration fra Rasmus Cederdorff) ---------- */
 .page {
   display: none;
   /*min heigh is screen heigh minus height of tab and top bar */
@@ -224,7 +184,7 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   padding: 0;
 }
 
-/* ---------- pick your interests (maja) ---------- */
+/* ---------- pick your interests (Maja & Tine) ---------- */
 .categories {
   border: none;
   position: relative;
@@ -248,7 +208,6 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   overflow: hidden;
 }
 
-
 .mdl-js {
   background-color: transparent;
 
@@ -257,7 +216,7 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 
 
 
-/* ---------- home page (tine) ---------- */
+/* ---------- home page (Tine) ---------- */
 .orange {
   width: 100%;
 }
@@ -301,7 +260,6 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   text-align: justify;
 }
 
-
 .hvid_boks_img img {
   padding: 12px 0px 12px 22px;
 }
@@ -309,7 +267,6 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 .floorball_img {
   border-end-end-radius: 4px;
   margin-bottom: -5px;
-
 }
 
 .meetup_info {
@@ -335,12 +292,11 @@ h2.floorball {
   z-index: 2;
   left: 80%;
   top: 84%;
-
 }
 
 
 
-/*----------- LOGIN FORSIDE (tine) -------------*/
+/*----------- LOGIN FORSIDE (Tine) -------------*/
 h1.find-your-new,
 h1.hobby-homies {
   color: var(--orange);
@@ -373,7 +329,7 @@ img.orange {
 }
 
 
-/* ---------- LOADING ANIMATION (pernille) ---------- */
+/* ---------- LOADING ANIMATION (Pernille) ---------- */
 #loader {
   z-index: 10000000;
   background: rgb(255, 220, 107);
@@ -459,7 +415,7 @@ img.orange {
 
 
 
-/* ---------- FIREBASE LOGIN (tine, maja) ---------- */
+/* ---------- FIREBASE LOGIN (Tine & Maja) ---------- */
 .spinner {
   border: 5px solid var(--light-grey);
   border-radius: 50%;
@@ -559,8 +515,6 @@ img.orange {
   margin-top: -55px;
   margin-left: 165px;
   font-size: 9pt;
-
-
 }
 
 /* både forgot password og sign in */
@@ -575,8 +529,7 @@ img.orange {
 
 
 
-/*----------------MEETUP (tine)----------------*/
-
+/*----------------MEETUP (Tine)----------------*/
 a {
   text-decoration: none;
 }
@@ -597,7 +550,6 @@ button {
   border: none;
   background: transparent;
 }
-
 
 /* styling til gul overskrift */
 .orange-h2 {
@@ -679,10 +631,9 @@ button {
   font-weight: lighter;
   font-size: 1em;
   padding-top: 4px;
-
 }
 
-/* ---------- CREATE EVENT (pernille) ---------- */
+/* ---------- CREATE EVENT (Pernille) ---------- */
 #createevent {
   background-color: white;
 }
@@ -718,10 +669,9 @@ button:active {
   transform: scale(0.9);
 }
 
-/* ---------- CHAT (pernille) ---------- */
+/* ---------- CHAT (Pernille) ---------- */
 #clients {
   background-color: white;
-
 }
 
 .chat-billede-enkelt {
@@ -758,10 +708,9 @@ button:active {
   color: #707070;
 }
 
-/* ---------- CHATRUM (pernille) ---------- */
+/* ---------- CHATRUM (Pernille) ---------- */
 #chat-rum {
   background-color: white;
-
 }
 
 .chatrum-billede {
@@ -804,7 +753,6 @@ button:active {
   float: right;
   margin-right: 5%;
   margin-top: 1%;
-
 }
 
 .chatrum-chatbesked-venstre {
@@ -857,16 +805,14 @@ button:active {
 }
 
 
-/* ---------- PROFILE (laurids) ---------- */
+/* ---------- PROFILE (Laurids) ---------- */
 #profile {
   background-color: white;
 }
 
-
 #profilflex {
   display: flex;
   justify-content: space-between;
-
 }
 
 #profileheaderflex {
@@ -875,20 +821,17 @@ button:active {
   top: 20px;
   z-index: 99999;
   margin: auto;
-
 }
 
 .profilearrow {
   width: 9.5%;
   margin-right: 65%;
   margin-top: 3px;
-
 }
 
 .profilearrow2 {
   width: 60.5%;
   margin-top: 3px;
-
 }
 
 #profileh {
@@ -904,7 +847,7 @@ img.orangeabsolute {
   left: 0;
 }
 
-/*Profilbillede af Jacob*/
+/*Profilbillede */
 .jacobprofilbillede {
   width: 150px;
   position: absolute;
@@ -950,7 +893,7 @@ img.orangeabsolute {
   margin-bottom: 10px;
 }
 
-/*Info (Jacob, Aarhus, student) */
+/*Info (Profil, Aarhus, student) */
 .profileh4 {
   color: black;
   margin: 0;
@@ -973,21 +916,18 @@ img.orangeabsolute {
   width: 40%;
   height: 40px;
 }
+
 button
 button:active {
   transform: scale(0.9);
 }
 
-/*PROFILE SLUT-----------------------------------------------------------------------*/
 
-/*YOUR MEETUPS--------------------------*/
+/*---------------YOUR MEETUPS -----------*/
 
 .yourmeetupsh {
-
   color: white;
   padding: 18%;
-
-
 }
 
 .meetuppil {
@@ -1001,6 +941,4 @@ button:active {
   display: flex;
   flex-direction: row;
   align-items: center;
-
-
 }

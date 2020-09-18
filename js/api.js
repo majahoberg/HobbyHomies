@@ -1,8 +1,10 @@
 "use strict";
 
+// Maja
+
 let _posts = [];
 
-
+// fetch fra wordpress api
 async function getPosts() {
   let response = await fetch("http://majahoberg.dk/wordpress/wp-json/wp/v2/posts");
   let data = await response.json();
@@ -11,10 +13,9 @@ async function getPosts() {
   appendPosts(_posts);
 }
 
-
 getPosts()
-// append posts to the DOM  ORIGINAL
 
+// append posts (både over-kategorierne og under-kategorierne) to the DOM
 function appendPosts(posts) {
   let template = "";
   console.log(posts);
@@ -29,9 +30,4 @@ function appendPosts(posts) {
   }
   console.log(template);
   document.querySelector("#posts").innerHTML = template; 
-
 }
-
-
-
-// hobby api link: https://gist.githubusercontent.com/carlelieser/884584d06b2d9429f321ec192f6dc7b5/raw/0888b5449ecda4787001b74811e645d0a74b8132/hobbies.json
