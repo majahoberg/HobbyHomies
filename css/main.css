@@ -142,11 +142,6 @@ RAMSUS's STYLING
   bottom: 5px;
 }
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
-
 #chattext {
   position: relative;
   top: -11.5px;
@@ -583,7 +578,9 @@ img.orange {
 
 /*----------------MEETUP (tine)----------------*/
 
-
+a {
+  text-decoration: none;
+}
 
 button {
 padding: 13px;
@@ -723,7 +720,6 @@ button {
 
 button:active {
   transform: scale(0.9);
-  50
 }
 
 /* ---------- CHAT (pernille) ---------- */
@@ -985,8 +981,6 @@ img.orangeabsolute {
 
 button:active {
   transform: scale(0.9);
-<<<<<<< Updated upstream
-  50
 }
 
 /*PROFILE SLUT-----------------------------------------------------------------------*/
@@ -1015,7 +1009,3 @@ button:active {
 
 
 }
-=======
-}
-/*KOPIER HER NED TIL-----------------------------------------------------------------------*/
->>>>>>> Stashed changes
