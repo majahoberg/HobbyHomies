@@ -1,6 +1,9 @@
 "use strict";
 
 
+//Laurids
+
+
 //Array med interesser
 
 let _searcharray = [
@@ -18,6 +21,7 @@ let _searcharray = [
 ];
 
 
+//Laurids
 
 
 //Søgefunktion
