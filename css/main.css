@@ -304,14 +304,19 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   text-align: justify;
 }
 
+.hvid_boks_img {
+  margin-left: 4%;
+}
 
 .hvid_boks_img img {
-  padding: 12px 0px 12px 22px;
+  padding: 12px 0px 12px 2px;
+
 }
 
 .floorball_img {
   border-end-end-radius: 4px;
   margin-bottom: -5px;
+  height: 150px;
 
 }
 
