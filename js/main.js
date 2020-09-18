@@ -37,11 +37,14 @@ function userAuthenticated(user) {
   showLoader(false);
 }
 
-// function home() {
-//  showPage("home");
-//  hideTabbar(false); 
-//  document.getElementById("interests").style.display = 'none';
-//}
+
+ function home() {
+  showPage("home");
+  hideTabbar(false); 
+  document.getElementById("interests").style.display = 'none';
+}
+
+
 
 function meetup() {
   showPage("meetup");
@@ -93,13 +96,13 @@ function goBack() {
   window.history.back();
 }
 
-// accordion fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion
+// accordion fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion (tine & maja)
 
 let acc = document.getElementsByClassName("accordion");
 let i;
 
 for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function() {
+  acc[i].addEventListener("click", function () {
     this.classList.toggle("active");
     let panel = this.nextElementSibling;
     if (panel.style.display === "block") {
@@ -109,21 +112,4 @@ for (i = 0; i < acc.length; i++) {
     }
   });
 }
-/*
-//Søgefunktion
 
-function search(value) {
-  console.log(value);
-  let filteredTeachers = [];
-  for (let teacher of teachers) {
-    let name = teacher.name.toLowerCase();
-    if (name.includes(value.toLowerCase())) {
-      filteredTeachers.push(teacher);
-    }
-  }
-
-  console.log(filteredTeachers);
-  appendTeachers(filteredTeachers);
-}
-
-*/

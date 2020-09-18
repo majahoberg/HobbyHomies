@@ -1,16 +1,7 @@
 "use strict";
 
-let _categories = [];
 let _posts = [];
 
-
-async function getCategories() {
-  let response = await fetch("http://majahoberg.dk/wordpress/wp-json/wp/v2/categories");
-  let data = await response.json();
-  console.log(data);
-  _categories = data;
-  appendCategories(_categories);
-}
 
 async function getPosts() {
   let response = await fetch("http://majahoberg.dk/wordpress/wp-json/wp/v2/posts");
@@ -22,39 +13,20 @@ async function getPosts() {
 
 
 getPosts()
-getCategories()
-
-
-// append categories to the DOM
-
-function appendCategories(categories) {
-  // TODO: append movies to #movies-container
-  let template = "";
-  console.log(categories);
-
-  for (let category of categories) {
-    template += /*html*/ `
-      <button>${category.name}</button>
-      `;
-  }
-
-  console.log(template);
-  document.querySelector("#categories").innerHTML = template;
-
-}
-
-// append posts to the DOM  
+// append posts to the DOM  ORIGINAL
 
 function appendPosts(posts) {
   let template = "";
   console.log(posts);
 
   for(let post of posts) {
-    template += /*html*/ `
-    <p>${post.title.rendered}</p>
+    template += /*html*/ `      
+      <button class="accordion">${post.title.rendered}</button>
+      <div class="panel">
+        ${post.content.rendered}
+      </div>
     `;
   }
-
   console.log(template);
   document.querySelector("#posts").innerHTML = template; 
 

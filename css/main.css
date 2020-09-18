@@ -225,7 +225,7 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 }
 
 /* ---------- pick your interests (maja) ---------- */
-#categories {
+.categories {
   border: none;
   position: relative;
   margin: 10%;
@@ -245,7 +245,6 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 
 .panel {
   display: none;
-  background-color: white;
   overflow: hidden;
 }
 
@@ -992,15 +991,15 @@ button:active {
 }
 
 .profilearrow2 {
-  width: 9.5%;
+  width: 60.5%;
   margin-top: 3px;
-  margin-left: 60%;
 
 }
 
 #profileh {
   color: white;
   margin: auto;
+  margin-right: 100px;
 }
 
 img.orangeabsolute {
