@@ -228,6 +228,7 @@
     <header class="topbar">
       <h2 class="home_h2">Pick your interests</h2>
     </header>
+<<<<<<< HEAD
 
     <div>
       <div id="categories" class="accordion">
@@ -238,6 +239,12 @@
     </div>
     <button onclick="home()" class="done">Done</button>
   </section>
+=======
+ 
+    <div id="posts" class="categories"></div>
+  <button onclick="home()" class="done">Done</button>
+</section>
+>>>>>>> eafc3c7b2c3dab0ae0fe1dd013e87f43e16c5d9c
 
 
 
@@ -254,10 +261,12 @@
         <img src="img/search-yellow.png" width="20%" id="input_img">
       </div>
     </header>
+
     <a href="#createevent" class="kryds">
       <img src="img/kryds.svg" width="17%"></a>
 
     <a class="meeutup_link" href="#meetup">
+
       <div class="hvid_boks">
         <h2 class="floorball">Floorball</h2>
         <p class="meetup_info"><img src="img/clock (1).svg" width="5%" onkeyup="search(this.value)">> 28 januar 2021 at
@@ -290,7 +299,7 @@
     <br>
   </section>
 
-  <!----------MEETUP------------->
+  <!---------- MEETUP (pernille)------------->
   <section id="meetup" class="page">
     <header class="topbar-til-gul-overskrift">
       <div class="flex-items-gul-overskrift">
@@ -304,9 +313,33 @@
     </header>
 
     <img class="floorball_img" src="img/floorball.jpg" width="100%">
-    <button class="participate">participate</button>
+    <button class="participate">Participate</button>
     <button class="participate">Invite</button>
     <button class="participate">Group chat</button>
+    <h3 class="meetup-overskrift">Floorball</h3>
+    <img src="img/bogmaerke.png" alt="bogmærke" class="bogmaerke">
+
+    <img src="img/ur.png" alt="ur" class="ur">
+    <p class="tid-tekst">28 januar 2021 at 20:45</p>
+    <br>
+    <img src="img/lokation-graa.png" alt="lokation" class="lokation-graa">
+    <p class="sted-tekst">Nørre Allé 84, 8000 Aarhus</p>
+
+    <h3 class="participants-overskrift">Participants <span class="tal-til-participants">4/15</span></h3>
+    <div class="flex-til-billeder">
+      <div><img src="img/laurids-rund.png" alt="laurids"></div>
+      <div><img src="img/pernille-rund.png" alt="pernille"></div>
+      <div><img src="img/tine-rund.png" alt="tine"></div>
+      <div><img src="img/maja-rund.png" alt="maja"></div>
+    </div>
+
+    <h3 class="h3-description">Description</h3><br>
+    <p class="description-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ornare, ante sit amet
+      blandit laoreet, turpis elit
+      interdum nisi, et vulputate nisi magna vel nisi. Aliquam a hendrerit eros. In ut felis sapien. Sed nisl ante,
+      vulputate
+      … <span class="read-more">Read more</span></p>
+    <br><br><br><br><br><br>
   </section>
 
 
@@ -405,6 +438,8 @@
     <br>
   </section>
 
+  <!-- CREATE EVENT (pernille) -->
+
   <section id=createevent class="page">
     <header class="topbar-til-gul-overskrift">
       <div class="flex-items-gul-overskrift">
@@ -419,14 +454,12 @@
     <div class="boks-bag-billede"><img src="img/kamera.png" alt="foto" class="indsaet-foto"></div>
     <div id="firstandlastnameflex"></div>
 
-    <!-- jacob/schytz -->
     <div class="profiletext">
       <h5 class="profileh5">Meetup name</h5>
       <h4 class="profileh4">Football</h4>
     </div>
     <hr class="hrprofile">
 
-    <!-- Info om profilen - lokation, beskæftigelse osv. -->
     <div class="profiletext">
       <h5 class="profileh5">Category</h5>
       <h4 class="profileh4">Sport, football</h4>
@@ -457,15 +490,12 @@
     </div>
     <hr class="hrprofile">
 
-
-
-
     <!-- Create event knap -->
     <button onclick="yourmeetups()">Create event</button>
   </section>
   </section>
 
-  <!-- chat page (pernille) -->
+  <!-- CHAT SIDE (pernille) -->
   <section id="clients" class="page">
     <header class="topbar-til-gul-overskrift">
       <div class="flex-items-gul-overskrift">
@@ -513,6 +543,7 @@
       <hr class="chat-streger">
     </div>
   </section>
+  <!-- CHAT RUM (pernille) -->
 
   <section id="chat-rum" class="page">
     <header class="topbar-til-gul-overskrift">
@@ -537,10 +568,10 @@
       <p class="chatrum-chatbesked-hoejre-2">Det lyder super! Vi ses senere!</p>
     </div>
 
+    <!-- input felt til at skrive besked i -->
     <form action="/action_page.php">
       <label for="fname"></label><br>
       <input type="text" id="message-box" name="fname" placeholder="Skriv en besked..">
-      <!-- <input type="submit" value="Submit"> -->
     </form>
     <img src="img/send-besked.png" alt="send" class="send-besked-ikon">
   </section>
@@ -661,14 +692,10 @@
           <img class="meetuppil" src="/img/arrow-white.png" alt="">
         </div>
       </div>
-
-
     </div>
 
 
-
     <div class="find-homies-profiler">
-
       <div class="flexmeetups">
         <div>
           <h2 class="yourmeetupsh">Previous Meetups</h2>
@@ -677,13 +704,9 @@
           <img class="meetuppil" src="/img/arrow-white.png" alt="">
         </div>
       </div>
-
-
     </div>
 
     <br><br><br><br><br><br>
-
-
   </section>
 
 
