@@ -43,7 +43,9 @@ function userAuthenticated(user) {
 //  document.getElementById("interests").style.display = 'none';
 //}
 
-
+function meetup() {
+  showPage("meetup");
+}
 
 function userNotAuthenticated() {
   showPage("login");
