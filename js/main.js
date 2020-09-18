@@ -37,11 +37,14 @@ function userAuthenticated(user) {
   showLoader(false);
 }
 
+
  function home() {
   showPage("home");
   hideTabbar(false); 
   document.getElementById("interests").style.display = 'none';
 }
+
+
 
 function meetup() {
   showPage("meetup");
@@ -93,7 +96,7 @@ function goBack() {
   window.history.back();
 }
 
-// accordion fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion
+// accordion fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion (tine & maja)
 
 let acc = document.getElementsByClassName("accordion");
 let i;
