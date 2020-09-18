@@ -583,14 +583,12 @@ a {
 }
 
 button {
-padding: 13px;
- background-color:#CDCACA;
- width: 22%;
+  background-color: #CDCACA;
 }
 
 .participate {
-  background-color:#CDCACA;
- margin: 10px;
+  background-color: #CDCACA;
+  margin: 10px;
 }
 
 /* ---------- FIND HOMIES (pernille) ---------- */
