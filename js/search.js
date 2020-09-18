@@ -30,8 +30,8 @@ function search(value) {
     let filteredProducts = [];
 
     for (const product of _searcharray) {
-        let header = header.toLowerCase();
-        let month = month.toLowerCase();
+        let header = product.header.toLowerCase();
+        let month = product.month.toLowerCase();
 
         if (header.includes(searchValue) || header.includes(searchValue)) {
             filteredProducts.push(product);
@@ -40,3 +40,7 @@ function search(value) {
 
         }
     };
+
+    search(filteredProducts);
+
+}

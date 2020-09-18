@@ -887,15 +887,15 @@ button:active {
 }
 
 .profilearrow2 {
-  width: 9.5%;
+  width: 60.5%;
   margin-top: 3px;
-  margin-left: 60%;
 
 }
 
 #profileh {
   color: white;
   margin: auto;
+  margin-right: 100px;
 }
 
 img.orangeabsolute {
