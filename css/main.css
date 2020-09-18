@@ -142,7 +142,10 @@ RAMSUS's STYLING
   bottom: 5px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 3a845efec16ce904807556efb39c5152446dc7f7
 #chattext {
   position: relative;
   top: -11.5px;
@@ -577,6 +580,23 @@ img.orange {
 
 
 
+/*----------------MEETUP (tine)----------------*/
+
+a {
+  text-decoration: none;
+}
+
+button {
+padding: 13px;
+ background-color:#CDCACA;
+ width: 22%;
+}
+
+.participate {
+  background-color:#CDCACA;
+ margin: 10px;
+}
+
 /* ---------- FIND HOMIES (pernille) ---------- */
 
 /* fjerner styling på knap */
@@ -704,7 +724,6 @@ button {
 
 button:active {
   transform: scale(0.9);
-  50
 }
 
 /* ---------- CHAT (pernille) ---------- */
@@ -966,7 +985,6 @@ img.orangeabsolute {
 
 button:active {
   transform: scale(0.9);
-  50
 }
 
 /*PROFILE SLUT-----------------------------------------------------------------------*/
