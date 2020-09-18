@@ -142,6 +142,10 @@ RAMSUS's STYLING
   bottom: 5px;
 }
 
+<<<<<<< Updated upstream
+=======
+
+>>>>>>> Stashed changes
 
 #chattext {
   position: relative;
@@ -577,6 +581,21 @@ img.orange {
 
 
 
+/*----------------MEETUP (tine)----------------*/
+
+
+
+button {
+padding: 13px;
+ background-color:#CDCACA;
+ width: 22%;
+}
+
+.participate {
+  background-color:#CDCACA;
+ margin: 10px;
+}
+
 /* ---------- FIND HOMIES (pernille) ---------- */
 
 /* fjerner styling på knap */
@@ -966,6 +985,7 @@ img.orangeabsolute {
 
 button:active {
   transform: scale(0.9);
+<<<<<<< Updated upstream
   50
 }
 
@@ -995,3 +1015,7 @@ button:active {
 
 
 }
+=======
+}
+/*KOPIER HER NED TIL-----------------------------------------------------------------------*/
+>>>>>>> Stashed changes

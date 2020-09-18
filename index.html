@@ -245,7 +245,7 @@
 
 
   <!-- PAGES -->
-  <!-- home page (tine) -->
+  <!-- HOME PAGE (tine) -->
   <section id="home" class="page">
     <img class="orange" src="img/baggrund1.png" alt="" width="100%">
     <header class="topbar">
@@ -258,18 +258,20 @@
     <a href="#createevent" class="kryds">
       <img src="img/kryds.svg" width="17%"></a>
 
-    <div class="hvid_boks">
-      <h2 class="floorball">Floorball</h2>
-      <p class="meetup_info"><img src="img/clock (1).svg" width="5%"> 28 januar 2021 at 20:45</p>
-      <p class="meetup_info"><img src="img/pin (1).svg" width="4%"> Nørre Allè 84, 8000 Aarhus C</p>
+    <button onclick="meetup()">
+      <div class="hvid_boks">
+        <h2 class="floorball">Floorball</h2>
+        <p class="meetup_info"><img src="img/clock (1).svg" width="5%"> 28 januar 2021 at 20:45</p>
+        <p class="meetup_info"><img src="img/pin (1).svg" width="4%"> Nørre Allè 84, 8000 Aarhus C</p>
 
-      <div class="hvid_boks_img">
-        <img src="/img/jacob-rund.png" width="16%">
-        <img src="/img/pernille-rund.png" width="16%">
-        <img src="/img/laurids-rund.png" width="16%">
+        <div class="hvid_boks_img">
+          <img src="/img/jacob-rund.png" width="16%">
+          <img src="/img/pernille-rund.png" width="16%">
+          <img src="/img/laurids-rund.png" width="16%">
+        </div>
+        <img class="floorball_img" src="img/floorball.jpg" width="100%">
       </div>
-      <img class="floorball_img" src="img/floorball.jpg" width="100%">
-    </div>
+    </button>
 
     <div class="hvid_boks">
       <h2 class="floorball">Football</h2>
@@ -286,6 +288,26 @@
     <br>
     <br>
   </section>
+
+  <!----------MEETUP------------->
+  <section id="meetup" class="page">
+    <header class="topbar-til-gul-overskrift">
+      <div class="flex-items-gul-overskrift">
+        <div><button onclick="goBack()"><img src="img/arrow-yellow.png" alt="tilbage" class="gul-pil-tilbage"></button>
+        </div>
+        <div>
+          <h2 class="orange-h2">Meetup</h2>
+        </div>
+        <div class="gul-search"></div>
+      </div>
+    </header>
+
+    <img class="floorball_img" src="img/floorball.jpg" width="100%">
+    <button class="participate">participate</button>
+    <button class="participate">Invite</button>
+    <button class="participate">Group chat</button>
+  </section>
+
 
   <!-- about page (rasmus)
    <section id="about" class="page">
