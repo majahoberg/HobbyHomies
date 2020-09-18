@@ -33,7 +33,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function userAuthenticated(user) {
   appendUserData(user);
-  showPage("interests");
+  showPage("home");
   showLoader(false);
 }
 
