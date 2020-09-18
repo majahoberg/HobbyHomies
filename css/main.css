@@ -709,17 +709,16 @@ button {
   background-color: var(--orange);
   color: white;
   border: none;
-  border-radius: 15px;
-  padding: 6px;
-  padding-left: 30px;
-  padding-right: 30px;
+  border-radius: 22px;
+  padding: 10px;
   transition: transform .2s;
   /* Animation */
   z-index: 999999999999999;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 16px;;
   margin-bottom: 30%;
-  width: 50%;
-  height: 30px;
+  width: 40%;
+  height: 40px;
 }
 
 button:active {
@@ -970,19 +969,18 @@ img.orangeabsolute {
   background-color: var(--orange);
   color: white;
   border: none;
-  border-radius: 15px;
-  padding: 6px;
-  padding-left: 30px;
-  padding-right: 30px;
+  border-radius: 22px;
+  padding: 10px;
   transition: transform .2s;
   /* Animation */
   z-index: 999999999999999;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 16px;;
   margin-bottom: 30%;
-  width: 50%;
-  height: 30px;
+  width: 40%;
+  height: 40px;
 }
-
+button
 button:active {
   transform: scale(0.9);
 }
