@@ -29,11 +29,11 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function userAuthenticated(user) {
   appendUserData(user);
-  showPage("home");
+  navigateTo("home");
 }
 
 function userNotAuthenticated() {
-  showPage("login");
+  navigateTo("login");
 
  // Firebase UI configuration (Inspiration fra Rasmus Cederdorff)
   const uiConfig = {
