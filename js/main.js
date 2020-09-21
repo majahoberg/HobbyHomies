@@ -29,7 +29,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function userAuthenticated(user) {
   appendUserData(user);
-  navigateTo("interests");
+  navigateTo("home");
 }
 
 function userNotAuthenticated() {
