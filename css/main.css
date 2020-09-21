@@ -1026,11 +1026,6 @@ button {
   background-color: white;
 }
 
-#profilflex {
-  display: flex;
-  justify-content: space-between;
-}
-
 #profileheaderflex {
   display: flex;
   position: absolute;
