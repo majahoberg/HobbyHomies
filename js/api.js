@@ -29,10 +29,11 @@ function appendPosts(posts) {
     `;
   }
   console.log(template);
-  document.querySelector("#posts").innerHTML = template; 
+  document.querySelector("#posts").innerHTML = template;
+  initAccordion(); 
 }
 
-
+function initAccordion() {
 // accordion fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion (Tine & Maja)
 let acc = document.getElementsByClassName("accordion");
 let i;
@@ -49,7 +50,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 
-
+}
 
 
 
