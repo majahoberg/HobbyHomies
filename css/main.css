@@ -185,27 +185,58 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 }
 
 /* ---------- pick your interests (Maja & Tine) ---------- */
+
+#posts {
+ 
+
+}
+
+
 .categories {
   border: none;
   position: relative;
   margin: 10%;
   z-index: 1;
-  border-radius: 4px;
+  border-radius: 5px;
 }
 
 .accordion {
   padding: 18px;
+  margin-bottom: 5%;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 15px;
-  transition: 0.4s;
+  background-color: white;
+  border-radius: 3px;
 }
+
+.accordion:active {
+  margin-bottom: 10%;
+}
+
+.accordion:focus {
+  margin-bottom: 10%;
+}
+
+.accordion:target {
+  margin-bottom: 10%;
+}
+
+
 
 .panel {
   display: none;
   overflow: hidden;
+  text-align: justify;
+
+}
+
+.panel p {
+  background-color: white;
+  padding: 5%;
+  margin: 0;
 }
 
 .mdl-js {
@@ -494,6 +525,12 @@ img.orange {
   border-radius: 20px;
 }
 
+/* cancel button active */
+.firebaseui-id-secondary-link:active {
+transform: scale(0.9);
+}
+
+
 /* next button */
 .mdl-button--raised.mdl-button--colored,
 .mdl-button--raised.mdl-button--colored:active,
@@ -502,6 +539,25 @@ img.orange {
   text-transform: capitalize;
   color: #fff;
   border-radius: 20px;
+}
+
+/* next button active */
+.mdl-button--raised.mdl-button--colored:active {
+transform: scale(0.9);
+}
+
+/* sign in with mail */
+.firebaseui-idp-button.mdl-button.mdl-js-button.mdl-button--raised.firebaseui-idp-password.firebaseui-id-idp-button:active {
+  transform: scale(0.9);
+}
+
+/* fjerner rød farve fra sign in with mail */
+.firebaseui-idp-button.mdl-button.mdl-js-button.mdl-button--raised.firebaseui-idp-password.firebaseui-id-idp-button:hover {
+  background-color: var(--orange);
+}
+
+.firebaseui-idp-button.mdl-button.mdl-js-button.mdl-button--raised.firebaseui-idp-google.firebaseui-id-idp-button:active {
+  transform: scale(0.9);
 }
 
 /* line below input fields */
@@ -557,6 +613,12 @@ button {
   padding-right: 5%;
   padding-top: 1%;
   padding-bottom: 1%;
+}
+
+button.participate  {
+  margin-top: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .participate {
@@ -1027,10 +1089,6 @@ img.orangeabsolute {
   margin-bottom: 30%;
   width: 40%;
   height: 40px;
-}
-
-button button:active {
-  transform: scale(0.9);
 }
 
 
