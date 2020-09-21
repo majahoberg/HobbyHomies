@@ -35,7 +35,7 @@ function userAuthenticated(user) {
 function userNotAuthenticated() {
   navigateTo("login");
 
- // Firebase UI configuration (Inspiration fra Rasmus Cederdorff)
+  // Firebase UI configuration (Inspiration fra Rasmus Cederdorff)
   const uiConfig = {
     credentialHelper: firebaseui.auth.CredentialHelper.NONE,
     signInOptions: [
@@ -76,7 +76,7 @@ function createevent() {
 // Tine & Maja
 function home() {
   showPage("home");
-  hideTabbar(false); 
+  hideTabbar(false);
   document.getElementById("interests").style.display = 'none';
 }
 

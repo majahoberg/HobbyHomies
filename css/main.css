@@ -88,7 +88,7 @@ background: linear-gradient(111deg, rgba(255,220,107,1) 0%, rgba(255,184,40,1) 1
   padding: 0;
 }
 
-/* Pernille */
+/* Styling af svg'er i tabbar (Pernille) */
 
 #stroke-2,
 .a7c32b84-4138-4909-b105-8352f2be7c0d {
@@ -607,7 +607,6 @@ button {
   float: left;
   padding-left: 2%;
   margin-top: 6.5%;
-
 }
 
 .ur {
@@ -622,7 +621,6 @@ button {
   float: left;
   margin-top: 25%;
   margin-left: -212px;
-
 }
 
 .tid-tekst {
@@ -808,6 +806,9 @@ button {
   height: 40px;
 }
 
+.scale-knap:active {
+  transform: scale(0.9);
+}
 
 /* ---------- CHAT (Pernille) ---------- */
 #clients {
