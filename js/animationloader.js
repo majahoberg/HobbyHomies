@@ -20,4 +20,4 @@ class Loader {
 }
 
 const loader = new Loader().show(false)
-console.log(loader);
+console.log(loader)
