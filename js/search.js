@@ -55,6 +55,7 @@ function appendProducts(products) {
     }
     document.querySelector(".hvid_boks").innerHTML = htmlTemplate;
 }
+
 appendProducts(_products);
 
 
