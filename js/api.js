@@ -24,7 +24,7 @@ function appendPosts(posts) {
     template += /*html*/ `      
       <button class = "accordion"> ${post.title.rendered} <img src="img/graa-pil-ned.png" class="graa-pil-ned"> <img src="img/orange-pil-op.png" class="orange-pil-op"> </button>
       <div class="panel">
-        ${post.content.rendered} <img src = "img/graa-cirkel.png" class = "graa-cirkel"> <img src = "img/gul-v-tegn.png" class="gul-v-tegn">
+        ${post.content.rendered} <img src = "img/graa-cirkel.png" onclick = "this.src='img/gul-v-tegn.png'">
       </div>
     `;
   }
