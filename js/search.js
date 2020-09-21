@@ -27,9 +27,12 @@ let _products = [
         imgpernille: 'img/maja-rund.png',
         imglaurids: 'img/laurids-rund.png',
         imgfloorball: 'img/fodbold.jpg'
-    }
+    },
+
 
 ];
+
+//Laurids
 
 function appendProducts(products) {
     let htmlTemplate = "";
@@ -37,7 +40,7 @@ function appendProducts(products) {
         htmlTemplate += `
 
     <h2 class="floorball">${product.header}</h2>
-    <p class="meetup_info"><img src="img/clock (1).svg" width="5%" onkeyup="search(this.value)">${product.month}</p >
+    <p class="meetup_info"><img src="img/clock (1).svg" width="5%" onkeyup="search(this.value)">${product.month}</p>
         <p class="meetup_info"><img src="img/pin (1).svg" width="4%">${product.location}</p>
 
             <div class="hvid_boks_img">
@@ -47,7 +50,8 @@ function appendProducts(products) {
         </div>
                         <img class="floorball_img" src="${product.imgfloorball}" width="100%">
 
-            
+
+
             
                         
       
@@ -76,8 +80,9 @@ function search(value) {
     for (const product of _products) {
         let header = product.header.toLowerCase();
         let month = product.month.toLowerCase();
+        let location = product.location.toLowerCase();
 
-        if (header.includes(searchValue) || header.includes(searchValue)) {
+        if (header.includes(searchValue) || header.includes(searchValue) || month.includes(searchValue) || location.includes(searchValue)) {
             filteredProducts.push(product);
 
 
