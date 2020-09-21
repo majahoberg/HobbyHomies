@@ -185,7 +185,6 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 }
 
 /* ---------- pick your interests (Maja & Tine) ---------- */
-
 .categories {
   border: none;
   position: relative;
@@ -256,8 +255,6 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 
 
 /* ---------- skjuler og tilføjer ikon, når man bruger accordion (pernille) ---------- */
-
-
 .accordion>.orange-pil-op {
   display: none;
 }
@@ -280,16 +277,10 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 }
 
 
-
-
-
-
 /* ?? */ 
 .mdl-js {
   background-color: transparent;
 }
-
-
 
 
 /* ---------- home page (Tine) ---------- */
@@ -668,9 +659,6 @@ button.participate {
   padding-right: 2px;
   width: 112px;
 }
-
-
-
 
 .participate {
   background-color: #E2E2E2;
