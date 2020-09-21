@@ -38,7 +38,8 @@ function appendProducts(products) {
     let htmlTemplate = "";
     for (const product of products) {
         htmlTemplate += `
-
+        <a class="meeutup_link" href="#meetup">
+<div class="hvid_boks">
     <h2 class="floorball">${product.header}</h2>
     <p class="meetup_info"><img src="img/clock (1).svg" width="5%" onkeyup="search(this.value)">${product.month}</p>
         <p class="meetup_info"><img src="img/pin (1).svg" width="4%">${product.location}</p>
@@ -49,15 +50,15 @@ function appendProducts(products) {
                         <img src="${product.imglaurids}" width="16%">
         </div>
                         <img class="floorball_img" src="${product.imgfloorball}" width="100%">
-
-
+</div>
+</a>
 
             
                         
       
 `;
     }
-    document.querySelector(".hvid_boks").innerHTML = htmlTemplate;
+    document.querySelector(".bokse").innerHTML = htmlTemplate;
 }
 appendProducts(_products);
 
