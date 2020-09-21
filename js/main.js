@@ -29,13 +29,13 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function userAuthenticated(user) {
   appendUserData(user);
-  showPage("home");
+  navigateTo("home");
 }
 
 function userNotAuthenticated() {
-  showPage("login");
+  navigateTo("login");
 
- // Firebase UI configuration (Inspiration fra Rasmus Cederdorff)
+  // Firebase UI configuration (Inspiration fra Rasmus Cederdorff)
   const uiConfig = {
     credentialHelper: firebaseui.auth.CredentialHelper.NONE,
     signInOptions: [
@@ -76,7 +76,7 @@ function createevent() {
 // Tine & Maja
 function home() {
   showPage("home");
-  hideTabbar(false); 
+  hideTabbar(false);
   document.getElementById("interests").style.display = 'none';
 }
 
@@ -85,19 +85,4 @@ function meetup() {
   showPage("meetup");
 }
 
-// accordion fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion (Tine & Maja)
-let acc = document.getElementsByClassName("accordion");
-let i;
-
-for (i = 0; i < acc.length; i++) {
-  acc[i].addEventListener("click", function () {
-    this.classList.toggle("active");
-    let panel = this.nextElementSibling;
-    if (panel.style.display === "block") {
-      panel.style.display = "none";
-    } else {
-      panel.style.display = "block";
-    }
-  });
-}
 
