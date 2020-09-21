@@ -185,6 +185,10 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 }
 
 /* ---------- pick your interests (Maja & Tine) ---------- */
+
+#posts {}
+
+
 .categories {
   border: none;
   position: relative;
@@ -196,13 +200,26 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 
 .accordion {
   padding: 18px;
+  margin-bottom: 5%;
   width: 100%;
   border: none;
   text-align: left;
   outline: none;
   font-size: 15px;
+  background-color: white;
+  border-radius: 3px;
+}
 
+.accordion:active {
+  margin-bottom: 10%;
+}
 
+.accordion:focus {
+  margin-bottom: 10%;
+}
+
+.accordion:target {
+  margin-bottom: 10%;
 }
 
 
@@ -211,6 +228,13 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   display: none;
   overflow: hidden;
   text-align: justify;
+
+}
+
+.panel p {
+  background-color: white;
+  padding: 5%;
+  margin: 0;
 }
 
 .mdl-js {
@@ -587,6 +611,12 @@ button {
   padding-right: 5%;
   padding-top: 1%;
   padding-bottom: 1%;
+}
+
+button.participate {
+  margin-top: 5%;
+  padding-top: 3%;
+  padding-bottom: 3%;
 }
 
 .participate {
