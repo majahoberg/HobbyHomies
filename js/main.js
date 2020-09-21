@@ -29,7 +29,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function userAuthenticated(user) {
   appendUserData(user);
-  navigateTo("home");
+  navigateTo("interests");
 }
 
 function userNotAuthenticated() {
@@ -84,5 +84,3 @@ function home() {
 function meetup() {
   showPage("meetup");
 }
-
-

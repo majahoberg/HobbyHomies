@@ -210,9 +210,30 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   border-radius: 3px;
 }
 
+
+
+
+
 .accordion:active {
   margin-bottom: 10%;
 }
+
+/* ---------- skjuler og tilføjer ikon, når man bruger accordion (pernille) ---------- */
+
+
+.accordion>.orange-pil-op {
+  display: none;
+}
+
+.accordion.active .graa-pil-ned {
+  display: none;
+}
+
+.accordion.active .orange-pil-op {
+  display: inherit;
+}
+
+
 
 .accordion:focus {
   margin-bottom: 10%;
@@ -239,7 +260,6 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 
 .mdl-js {
   background-color: transparent;
-
 }
 
 
