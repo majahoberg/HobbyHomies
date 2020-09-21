@@ -227,6 +227,16 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   display: inherit;
 }
 
+/* ---------- slutter her ---------- */
+/* ---------- styling af ikoner ---------- */
+
+.accordion .graa-pil-ned,
+.orange-pil-op {
+  width: 8%;
+  float: right;
+}
+
+
 
 
 .accordion:focus {
