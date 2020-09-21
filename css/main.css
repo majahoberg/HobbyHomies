@@ -207,10 +207,53 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   border-radius: 3px;
 }
 
-
-.accordion:active {
-  margin-bottom: 10%;
+.panel {
+  display: none;
+  overflow: hidden;
+  text-align: justify;
+  margin-top: -20px;
+  background-color: white;
+  padding: 5%;
+  margin-bottom: 9%;
 }
+
+.panel p {
+  width: 60px;
+  margin-right: 60px;
+  position: absolute;
+  margin-top: 0px;
+}
+
+.panel img {
+  width: 8%;
+  position: relative;
+  float: right;
+  
+}
+
+.done {
+  background-color: var(--orange);
+  color: white;
+  border: none;
+  border-radius: 22px;
+  padding: 10px;
+  transition: transform .2s;
+  /* Animation */
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 9%;
+  width: 40%;
+  height: 40px;
+}
+
+.done:active {
+  transform: scale(0.9);
+}
+
+
+
+
+
 
 /* ---------- skjuler og tilføjer ikon, når man bruger accordion (pernille) ---------- */
 
@@ -236,55 +279,6 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   float: right;
 }
 
-
-
-
-.accordion:focus {
-  margin-bottom: 10%;
-}
-
-.accordion:target {
-  margin-bottom: 10%;
-}
-
-
-
-.panel {
-  display: none;
-  overflow: hidden;
-  text-align: justify;
-  margin-top: -18px;
-  background-color: white;
-  padding: 5%;
-  margin: 0;
-}
-
-.panel p {
-  background-color: white;
-  padding: 5%;
-  margin: 0;
-  margin-bottom: 7%;
-}
-
-
-.done {
-  background-color: var(--orange);
-  color: white;
-  border: none;
-  border-radius: 22px;
-  padding: 10px;
-  transition: transform .2s;
-  /* Animation */
-  font-weight: 700;
-  font-size: 16px;
-  margin-bottom: 9%;
-  width: 40%;
-  height: 40px;
-}
-
-.done:active {
-  transform: scale(0.9);
-}
 
 
 
