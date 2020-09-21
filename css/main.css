@@ -945,6 +945,10 @@ button {
   padding-bottom: 5%;
 }
 
+#profilename h4 {
+  margin: 0;
+}
+
 .h4-chat-navn {
   color: #FFB828;
   margin-top: 6px;
