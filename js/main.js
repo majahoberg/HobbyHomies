@@ -90,7 +90,5 @@ function participateButton() {
   document.getElementById('participate').style.backgroundColor = "#FFB828";
   document.getElementById('participate').style.color = "white";
   document.getElementById('participate').innerHTML = "Going";
-  
-  }
 
-  
+}

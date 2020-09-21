@@ -22,9 +22,9 @@ function appendPosts(posts) {
 
   for (let post of posts) {
     template += /*html*/ `      
-      <button class="accordion">${post.title.rendered}</button>
+      <button class = "accordion"> ${post.title.rendered} <img src="img/graa-pil-ned.png" class="graa-pil-ned"> <img src="img/orange-pil-op.png" class="orange-pil-op"> </button>
       <div class="panel">
-        ${post.content.rendered}
+        ${post.content.rendered} <img src = "img/graa-cirkel.png" onclick = "this.src='img/gul-v-tegn.png'">
       </div>
     `;
   }
@@ -32,6 +32,10 @@ function appendPosts(posts) {
   document.querySelector("#posts").innerHTML = template;
   initAccordion();
 }
+
+
+
+
 
 function initAccordion() {
   // accordion fra https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_accordion (Tine & Maja)

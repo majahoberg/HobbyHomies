@@ -186,12 +186,6 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 
 /* ---------- pick your interests (Maja & Tine) ---------- */
 
-#posts {
- 
-
-}
-
-
 .categories {
   border: none;
   position: relative;
@@ -213,12 +207,46 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   border-radius: 3px;
 }
 
+
+.accordion:active {
+  margin-bottom: 10%;
+}
+
+/* ---------- skjuler og tilføjer ikon, når man bruger accordion (pernille) ---------- */
+
+
+.accordion>.orange-pil-op {
+  display: none;
+}
+
+.accordion.active .graa-pil-ned {
+  display: none;
+}
+
+.accordion.active .orange-pil-op {
+  display: inherit;
+}
+
+
+
+.accordion:focus {
+  margin-bottom: 10%;
+}
+
+.accordion:target {
+  margin-bottom: 10%;
+}
+
+
+
 .panel {
   display: none;
   overflow: hidden;
   text-align: justify;
   margin-top: -18px;
-
+  background-color: white;
+  padding: 5%;
+  margin: 0;
 }
 
 .panel p {
@@ -255,7 +283,6 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 /* ?? */ 
 .mdl-js {
   background-color: transparent;
-
 }
 
 
@@ -541,7 +568,7 @@ img.orange {
 
 /* cancel button active */
 .firebaseui-id-secondary-link:active {
-transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 
@@ -557,7 +584,7 @@ transform: scale(0.9);
 
 /* next button active */
 .mdl-button--raised.mdl-button--colored:active {
-transform: scale(0.9);
+  transform: scale(0.9);
 }
 
 /* sign in with mail */

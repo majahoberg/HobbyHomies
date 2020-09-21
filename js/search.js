@@ -60,6 +60,7 @@ function appendProducts(products) {
     }
     document.querySelector(".bokse").innerHTML = htmlTemplate;
 }
+
 appendProducts(_products);
 
 
