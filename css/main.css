@@ -191,6 +191,7 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   margin: 10%;
   z-index: 1;
   border-radius: 4px;
+  
 }
 
 .accordion {
@@ -200,12 +201,16 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   text-align: left;
   outline: none;
   font-size: 15px;
-  transition: 0.4s;
+
+  
 }
+
+
 
 .panel {
   display: none;
   overflow: hidden;
+  text-align: justify;
 }
 
 .mdl-js {
@@ -494,6 +499,12 @@ img.orange {
   border-radius: 20px;
 }
 
+/* cancel button active */
+.firebaseui-id-secondary-link:active {
+transform: scale(0.9);
+}
+
+
 /* next button */
 .mdl-button--raised.mdl-button--colored,
 .mdl-button--raised.mdl-button--colored:active,
@@ -502,6 +513,25 @@ img.orange {
   text-transform: capitalize;
   color: #fff;
   border-radius: 20px;
+}
+
+/* next button active */
+.mdl-button--raised.mdl-button--colored:active {
+transform: scale(0.9);
+}
+
+/* sign in with mail */
+.firebaseui-idp-button.mdl-button.mdl-js-button.mdl-button--raised.firebaseui-idp-password.firebaseui-id-idp-button:active {
+  transform: scale(0.9);
+}
+
+/* fjerner rød farve fra sign in with mail */
+.firebaseui-idp-button.mdl-button.mdl-js-button.mdl-button--raised.firebaseui-idp-password.firebaseui-id-idp-button:hover {
+  background-color: var(--orange);
+}
+
+.firebaseui-idp-button.mdl-button.mdl-js-button.mdl-button--raised.firebaseui-idp-google.firebaseui-id-idp-button:active {
+  transform: scale(0.9);
 }
 
 /* line below input fields */
@@ -778,9 +808,6 @@ button {
   height: 40px;
 }
 
-button:active {
-  transform: scale(0.9);
-}
 
 /* ---------- CHAT (Pernille) ---------- */
 #clients {
@@ -1029,11 +1056,6 @@ img.orangeabsolute {
   margin-bottom: 30%;
   width: 40%;
   height: 40px;
-}
-
-button
-button:active {
-  transform: scale(0.9);
 }
 
 
