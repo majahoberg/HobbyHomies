@@ -606,7 +606,7 @@ a {
 
 button {
   background-color: #CDCACA;
-  color: #707070;
+  color: var(--text-color-dark);
   font-family: montserrat;
   font-weight: bolder;
   padding-left: 5%;
@@ -615,16 +615,22 @@ button {
   padding-bottom: 1%;
 }
 
-button.participate  {
+button.participate {
   margin-top: 5%;
   padding-top: 3%;
   padding-bottom: 3%;
+  padding-left: 2px;
+  padding-right: 2px;
+  width: 112px;
 }
 
+
+
+
 .participate {
-  background-color: #CDCACA;
+  background-color: #E2E2E2;
   margin-top: -5em;
-  margin: 10px;
+  margin: 6px;
 }
 
 .meetup-overskrift {
