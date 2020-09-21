@@ -35,7 +35,7 @@ function userAuthenticated(user) {
 function userNotAuthenticated() {
   navigateTo("login");
 
-  // Firebase UI configuration (Inspiration fra Rasmus Cederdorff)
+  // Tine og maja - Firebase UI configuration (Inspiration fra Rasmus Cederdorff)
   const uiConfig = {
     credentialHelper: firebaseui.auth.CredentialHelper.NONE,
     signInOptions: [
