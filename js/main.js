@@ -85,7 +85,7 @@ function meetup() {
   showPage("meetup");
 }
 
-//tine & maja - tilføjer farve til Meetup Participate knap ved onclick
+//Tine & Maja - tilføjer farve til Meetup Participate knap ved onclick
 function participateButton() {
   document.getElementById('participate').style.backgroundColor = "#FFB828";
   document.getElementById('participate').style.color = "white";

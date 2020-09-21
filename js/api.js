@@ -1,6 +1,6 @@
 "use strict";
 
-// Maja
+//(Maja, Tine hjalp med API i wordpress)
 let _posts = [];
 // fetch fra wordpress api
 async function getPosts() {
@@ -13,6 +13,7 @@ async function getPosts() {
 
 getPosts()
 
+//(Tine, Maja og Pernille)
 // append posts (både over-kategorierne og under-kategorierne) to the DOM
 function appendPosts(posts) {
   let template = "";
