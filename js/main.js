@@ -29,7 +29,7 @@ firebase.auth().onAuthStateChanged(function (user) {
 
 function userAuthenticated(user) {
   appendUserData(user);
-  navigateTo("home");
+  showPage("home");
 }
 
 function userNotAuthenticated() {
@@ -71,13 +71,6 @@ function yourmeetups() {
 // Pernille
 function createevent() {
   showPage("createevent")
-}
-
-// Tine & Maja
-function home() {
-  showPage("home");
-  hideTabbar(false);
-  document.getElementById("interests").style.display = 'none';
 }
 
 // Tine
