@@ -185,14 +185,13 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 }
 
 /* ---------- pick your interests (Maja & Tine) ---------- */
-
 .categories {
   border: none;
   position: relative;
   margin: 10%;
   z-index: 1;
   border-radius: 5px;
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .accordion {
@@ -207,62 +206,29 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
   border-radius: 3px;
 }
 
-
-.accordion:active {
-  margin-bottom: 10%;
-}
-
-/* ---------- skjuler og tilføjer ikon, når man bruger accordion (pernille) ---------- */
-
-
-.accordion>.orange-pil-op {
-  display: none;
-}
-
-.accordion.active .graa-pil-ned {
-  display: none;
-}
-
-.accordion.active .orange-pil-op {
-  display: inherit;
-}
-
-/* ---------- slutter her ---------- */
-/* ---------- styling af ikoner ---------- */
-
-.accordion .graa-pil-ned,
-.orange-pil-op {
-  width: 8%;
-  float: right;
-}
-
-.accordion:focus {
-  margin-bottom: 10%;
-}
-
-.accordion:target {
-  margin-bottom: 10%;
-}
-
-
-
 .panel {
   display: none;
   overflow: hidden;
   text-align: justify;
-  margin-top: -18px;
+  margin-top: -20px;
   background-color: white;
   padding: 5%;
-  margin: 0;
+  margin-bottom: 9%;
 }
 
 .panel p {
-  background-color: white;
-  padding: 5%;
-  margin: 0;
-  margin-bottom: 7%;
+  width: 60px;
+  margin-right: 60px;
+  position: absolute;
+  margin-top: 0px;
 }
 
+.panel img {
+  width: 8%;
+  position: relative;
+  float: right;
+  
+}
 
 .done {
   background-color: var(--orange);
@@ -287,12 +253,34 @@ a.active .f3298beb-8e07-41c1-862c-094f373cce4a {
 
 
 
-/* ?? */
-.mdl-js {
-  background-color: transparent;
+
+/* ---------- skjuler og tilføjer ikon, når man bruger accordion (pernille) ---------- */
+.accordion>.orange-pil-op {
+  display: none;
+}
+
+.accordion.active .graa-pil-ned {
+  display: none;
+}
+
+.accordion.active .orange-pil-op {
+  display: inherit;
+}
+
+/* ---------- slutter her ---------- */
+/* ---------- styling af ikoner ---------- */
+
+.accordion .graa-pil-ned,
+.orange-pil-op {
+  width: 8%;
+  float: right;
 }
 
 
+/* ?? */ 
+.mdl-js {
+  background-color: transparent;
+}
 
 
 /* ---------- home page (Tine) ---------- */
