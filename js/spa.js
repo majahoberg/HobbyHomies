@@ -50,7 +50,6 @@ function pageChange() {
     hideTabbar(false);
   }
 }
-
 pageChange(); // called by default when the app is loaded for the first time
 
 // show and hide tabbar (Tine & Maja med hjælp fra Rasmus Cederdorff)
