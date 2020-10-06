@@ -51,16 +51,11 @@ function appendProducts(products) {
         </div>
                         <img class="floorball_img" src="${product.imgfloorball}" width="100%">
 </div>
-</a>
-
-            
-                        
-      
+</a> 
 `;
     }
     document.querySelector(".bokse").innerHTML = htmlTemplate;
 }
-
 appendProducts(_products);
 
 
@@ -86,12 +81,8 @@ function search(value) {
 
         if (header.includes(searchValue) || header.includes(searchValue) || month.includes(searchValue) || location.includes(searchValue)) {
             filteredProducts.push(product);
-
-
-
         }
     };
 
     appendProducts(filteredProducts);
-
 }
