@@ -73,13 +73,6 @@ function createevent() {
   showPage("createevent")
 }
 
-// Tine & Maja
-function home() {
-  showPage("home");
-  hideTabbar(false);
-  document.getElementById("interests").style.display = 'none';
-}
-
 // Tine
 function meetup() {
   showPage("meetup");
